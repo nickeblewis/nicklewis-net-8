@@ -1,56 +1,130 @@
 // This is where project configuration and plugin options are located.
 // Learn more: https://gridsome.org/docs/config
 
-// Changes here requires a server restart.
+// Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
-// Load variables from `.env` as soon as possible
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV || 'development'}`
-})
+
+const tailwind = require('tailwindcss')
+const purgecss = require('@fullhuman/postcss-purgecss')
+
+const postcssPlugins = [
+  tailwind(),
+]
+
+if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 const clientConfig = require('./client-config')
 
-const isProd = process.env.NODE_ENV === 'production'
-
 module.exports = {
-  siteName: 'Gridsome Blog Starter',
-  siteDescription:
-    'A simple, hackable & minimalistic starter for Gridsome that uses structured content from Sanity.io.',
-
-  templates: {
-    SanityPost: '/:slug__current'
-  },
-
-  plugins: [
+  siteName: 'Nick Lewis',
+  siteDescription: 'Photographer, Coder and Content Creator',
+  siteUrl: 'https://nicklewis.net',
+  plugins: [ 
     {
       use: 'gridsome-source-sanity',
       options: {
         ...clientConfig.sanity,
-        typeName: 'Sanity',
-        token: process.env.SANITY_TOKEN,
-        overlayDrafts: !isProd,
-        watchMode: !isProd
-      }
-    }
-    /* {
-      // Create posts from markdown files
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'Post',
-        path: 'content/posts/*.md',
-        route: '/:slug',
+        //projectId: '85cmsqr4',
+        //dataset: 'production',
+        // Token is only required if dataset is private
+        // or `overlayDrafts` is set to true
+        // token: '<tokenWithReadRights>'
+        overlayDrafts: false,
+        watchMode: false,
         refs: {
-          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
             typeName: 'Tag',
-            route: '/tag/:id',
+            route: 'tag/:id',
             create: true
           }
         }
-      },
-      {
-
       }
-    } */
-  ]
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/**/*.md',
+        typeName: 'Post',
+        remakr: {
+          plugins: [
+            [ '@noxify/gridsome-plugin-remark-embed', {
+                'enabledProviders' : ['Youtube', 'Twitter', 'Gist', 'JSFiddle'],
+            }]
+          ]
+
+        },
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
+        }
+      }
+    },
+    // {
+    //   use: '@gridsome/source-filesystem',
+    //   options: {
+    //     path: 'docs/**/*.md',
+    //     typeName: 'Post',
+        
+    //   }
+    // },    
+    {
+      use: 'gridsome-plugin-rss',
+      options: {
+        contentTypeName: 'Post',
+        feedOptions: {
+          title: 'Nick Lewis',
+          feed_url: 'https://nicklewis.net/rss.xml',
+          site_url: 'https://nicklewis.net/'
+        },
+        feedItemOptions: node => ({
+          title: node.title,
+          description: node.summary,
+          url: 'https://nicklewis.net' + node.path,
+          author: 'Nick Lewis',
+          date: node.date
+        }),
+        output: {
+          dir: './static',
+          name: 'rss.xml'
+        }
+      }
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000, // default
+      }
+    },
+  ],
+  templates: {
+    SanityPost: [
+      { path: '/blog/:year/:month/:slug__current'},
+      { name: 'Features', path: '/:slug__current'},
+    ],
+    Post: [
+      { path: "/:section/:sub/:slug" },
+      { name: "SubSection", path: "/:section/:slug" },
+      { name: "Sanity", path: "/blog/:year/:month/:slug" }
+    ],
+    Tag: '/tag/:id'
+  },
+  transformers: {
+    remark: {
+      plugins: [
+        [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+      ],
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+    }
+  },
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: postcssPlugins,
+      },
+    },
+  },
 }
