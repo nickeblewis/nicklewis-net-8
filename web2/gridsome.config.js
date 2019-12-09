@@ -10,17 +10,31 @@ require('dotenv').config({
 
 const clientConfig = require('./client-config')
 
+const tailwind = require('tailwindcss')
+const purgecss = require('@fullhuman/postcss-purgecss')
+
+const postcssPlugins = [
+  tailwind(),
+]
+
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
-  siteName: 'Gridsome Blog Starter',
-  siteDescription:
-    'A simple, hackable & minimalistic starter for Gridsome that uses structured content from Sanity.io.',
-
+  siteName: 'Nick Lewis',
+  siteDescription: 'Photographer, Coder and Content Creator',
+  siteUrl: 'https://nicklewis.net',
   templates: {
-    SanityPost: '/:slug__current'
+    SanityPost: [
+      { path: '/blog/:year/:month/:slug__current'},
+      { name: 'Features', path: '/:slug__current'},
+    ],
+    Post: [
+      { path: "/:section/:sub/:slug" },
+      { name: "SubSection", path: "/:section/:slug" },
+      { name: "Sanity", path: "/blog/:year/:month/:slug" }
+    ],
+    Tag: '/tag/:id'
   },
-
   plugins: [
     {
       use: 'gridsome-source-sanity',
@@ -31,7 +45,28 @@ module.exports = {
         overlayDrafts: !isProd,
         watchMode: !isProd
       }
-    }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/**/*.md',
+        typeName: 'Post',
+        remakr: {
+          plugins: [
+            [ '@noxify/gridsome-plugin-remark-embed', {
+                'enabledProviders' : ['Youtube', 'Twitter', 'Gist', 'JSFiddle'],
+            }]
+          ]
+
+        },
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
+        }
+      }
+    },
     /* {
       // Create posts from markdown files
       use: '@gridsome/source-filesystem',
@@ -52,5 +87,22 @@ module.exports = {
 
       }
     } */
-  ]
+  ],
+  transformers: {
+    remark: {
+      plugins: [
+        [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+      ],
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+    }
+  },
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: postcssPlugins,
+      },
+    },
+  }
 }

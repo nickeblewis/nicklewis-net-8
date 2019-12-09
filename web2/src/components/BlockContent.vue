@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import PortableText from 'sanity-blocks-vue-component'
-
+import PortableText from "sanity-blocks-vue-component";
+import YouTube from '../components/YouTube'
 export default {
   props: {
     blocks: Array
@@ -21,11 +21,15 @@ export default {
     return {
       serializers: {
         types: {
+          youtube: YouTube,
           mainImage: ({ node }) => (
             <figure>
               <img
-                src={this.$urlForImage(node, this.$static.metadata.sanityOptions)
-                  .auto('format')
+                src={this.$urlForImage(
+                  node,
+                  this.$static.metadata.sanityOptions
+                )
+                  .auto("format")
                   .url()}
                 alt={node.alt}
               />
@@ -34,9 +38,9 @@ export default {
           )
         }
       }
-    }
+    };
   }
-}
+};
 </script>
 
 <static-query>
@@ -49,3 +53,11 @@ export default {
   }
 }
 </static-query>
+
+<style scoped>
+figcaption {
+  text-align: center;
+  font-size: 0.7em;
+  font-style: italic;
+}
+</style>
