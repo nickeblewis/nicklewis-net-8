@@ -1,6 +1,6 @@
 {
   "packages": [
-    "web2",
+    "web",
     "studio"
   ],
   "version": "1.0.0"
