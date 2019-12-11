@@ -74,6 +74,7 @@
           </div>
         </div>
       </div> <!-- end contact-me -->
+      <Bio />
     </div>
   </Layout>
 </template>
@@ -93,7 +94,11 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
+import Bio from '../components/Bio'
 export default {
+  components: {
+    Bio
+  },
   data() {
     return {
       formData: {}
