@@ -63,31 +63,6 @@ export default {
       ]
     },
     {
-      name: 'section',
-      type: 'string',
-      title: 'Section',
-      description: 'Site section'
-    },
-    {
-      name: 'sub',
-      type: 'string',
-      title: 'Sub',
-      description: 'Site sub-section'
-    },
-    {
-      name: 'categories',
-      type: 'array',
-      title: 'Categories',
-      of: [
-        {
-          type: 'reference',
-          to: {
-            type: 'category'
-          }
-        }
-      ]
-    },
-    {
       title: 'Tags',
       name: 'tags',
       type: 'array',
