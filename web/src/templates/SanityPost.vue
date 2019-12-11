@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <!-- TODO- Need to include the cover image in a similar way to how I did it on nicklewis.online -->
     <div class="container-inner mx-auto my-16">
       <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
       <div class="text-xl text-gray-600 mb-4">{{ $page.post.publishedAt }}</div>
