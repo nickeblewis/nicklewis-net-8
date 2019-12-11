@@ -57,10 +57,6 @@ query Post ($id: ID!) {
   post: sanityPost (id: $id) {
     title
     publishedAt (format: "MMMM D, Y")
-    categories {
-      id
-      title
-    }
     _rawExcerpt
     _rawBody
     images {
