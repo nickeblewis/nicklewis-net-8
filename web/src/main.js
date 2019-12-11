@@ -4,6 +4,7 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
 import VueFuse from 'vue-fuse'
+
 // Import image url builder
 import urlForImage from './utils/urlForImage'
 import VueYoutube from 'vue-youtube'
@@ -19,7 +20,7 @@ export default function (Vue, { router, head, isClient }) {
   })
 
   Vue.use(VueFuse)
-
+  
 
   //Vue.use(VueFbCustomerChat, {
   //  page_id: 182108598496942, //  change 'null' to your Facebook Page ID,
