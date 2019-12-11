@@ -8,11 +8,11 @@
       <div class="mt-8 sm:mt-0">
         <g-image src="../../static/developer.svg" alt="hero" class="mx-auto sm:mx-0" />
       </div>
-    </div> <!-- end hero -->
+    </div>
+    <!-- end hero -->
 
     <div class="container-inner mx-auto">
-
-       <p
+      <p
         class="text-lg sm:text-xl"
       >I have worked for many years in the web and applications development industries and have combined the two disciplines throughout my career. I am a highly experienced front-end web developer who specialises in VueJS/Gridsome at the current point in time. I am setting out to write about my experience through this website and hope that my blog posts and documentation can help you in some way, whether you are trying to get your head around the latest tech or are seeking the kind of consultancy services I offer on a freelance basis.</p>
 
@@ -27,16 +27,18 @@
     </div>
 
     <div class="overflow-x-hidden">
-      <div class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative">
+      <div
+        class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative"
+      >
         <h2 class="font-bold mb-6" id="projects">Recent Images:</h2>
 
         <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
-          <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
+          <svg width="170px" height="170px">
+            <use xlink:href="#dots-triangle" />
+          </svg>
         </div>
 
-
-
-<masonry 
+        <masonry
           :cols="{default: 4, 1000: 3, 700: 2, 300: 1}"
           :gutter="{default: '30px', 700: '15px'}"
         >
@@ -45,49 +47,43 @@
             :key="photo.id"
             class="m-3 rounded-lg shadow-lg overflow-hidden"
           >
-          
             <g-link :to="photo.node.slug.current">
-
-            <g-image
-              v-if="photo.node.mainImage"
-              alt="Cover image"
-              class="justify-center"
-              :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).width(800).url()"
-            />
-            
+              <g-image
+                v-if="photo.node.mainImage"
+                alt="Cover image"
+                class="justify-center"
+                :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).width(800).url()"
+              />
             </g-link>
           </div>
         </masonry>
-
-
-
-        
-      </div> <!-- end photos -->
+      </div>
+      <!-- end photos -->
     </div>
 
     <div class="overflow-x-hidden">
-      <div class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative">
+      <div
+        class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative"
+      >
         <h2 class="font-bold mb-6" id="projects">Recent Posts:</h2>
 
         <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
-          <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
+          <svg width="170px" height="170px">
+            <use xlink:href="#dots-triangle" />
+          </svg>
         </div>
 
         <ul class="text-lg sm:text-xl">
-          
-          <li
-            v-for="post in $page.posts.edges"
-            :key="post.id"  
-            class="checkmark mb-6">
+          <li v-for="post in $page.posts.edges" :key="post.id" class="checkmark mb-6">
             <div>
-              {{ post.node.section }} - <g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link>
+              {{ post.node.section }} -
+              <g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link>
             </div>
-            <div class="text-lg text-gray-600">
-              {{ post.node.summary }}
-            </div>
+            <div class="text-lg text-gray-600">{{ post.node.summary }}</div>
           </li>
         </ul>
-      </div> <!-- end projects -->
+      </div>
+      <!-- end projects -->
     </div>
 
     <div class="overflow-x-hidden border-gray-200 border-b">
@@ -95,16 +91,25 @@
         <h2 class="font-bold mb-6" id="about">Get to know me:</h2>
 
         <div class="absolute left-0" style="top: 50px; transform: translateX(-100%)">
-          <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
+          <svg width="170px" height="170px">
+            <use xlink:href="#dots-triangle" />
+          </svg>
         </div>
 
         <div class="flex flex-col sm:flex-row justify-between items-center mb-16">
-          <div><g-image src="../../static/profile.jpg" alt="avatar" class="w-32 h-32 rounded-full mb-8 lg:mb-0" /></div>
-          <div class="flex-1 text-lg sm:text-xl ml-6">I am a freelance web developer, content creator and writer, who is on a mission to help businesses and individuals build solutions for their online world.</div>
+          <div>
+            <g-image
+              src="../../static/profile.jpg"
+              alt="avatar"
+              class="w-32 h-32 rounded-full mb-8 lg:mb-0"
+            />
+          </div>
+          <div
+            class="flex-1 text-lg sm:text-xl ml-6"
+          >I am a freelance web developer, photographer, content creator and writer, who is on a mission to help businesses and individuals build solutions for their online world.</div>
         </div>
-
-    
-      </div> <!-- end get-to-know me -->
+      </div>
+      <!-- end get-to-know me -->
     </div>
 
     <div class="overflow-x-hidden">
@@ -113,7 +118,9 @@
           <h2 class="font-bold mb-6" id="contact">Contact me:</h2>
 
           <div class="absolute right-0 top-0" style="transform: translate(100%) rotate(180deg)">
-            <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
+            <svg width="170px" height="170px">
+              <use xlink:href="#dots-triangle" />
+            </svg>
           </div>
 
           <div class="text-lg sm:text-lg mb-16">
@@ -187,7 +194,8 @@
             </form>
           </div>
         </div>
-      </div> <!-- end contact-me -->
+      </div>
+      <!-- end contact-me -->
     </div>
   </Layout>
 </template>
@@ -268,27 +276,25 @@ export default {
   data() {
     return {
       formData: {}
-    };
+    }
   },
   methods: {
     encode(data) {
       return Object.keys(data)
-        .map(
-          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-        )
-        .join("&");
+        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+        .join('&')
     },
     handleSubmit(e) {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({
-          "form-name": e.target.getAttribute("name"),
+          'form-name': e.target.getAttribute('name'),
           ...this.formData
         })
       })
-        .then(() => this.$router.push("/success"))
-        .catch(error => alert(error));
+        .then(() => this.$router.push('/success'))
+        .catch(error => alert(error))
     }
   },
   metaInfo: {
