@@ -22,6 +22,7 @@
             :key="image.id"
             class="m-3 rounded-lg shadow-lg overflow-hidden"
           >
+          
             <g-image
               alt="Cover image"
               class="justify-center"

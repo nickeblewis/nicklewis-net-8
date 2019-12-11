@@ -28,6 +28,45 @@
 
     <div class="overflow-x-hidden">
       <div class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative">
+        <h2 class="font-bold mb-6" id="projects">Recent Images:</h2>
+
+        <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
+          <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
+        </div>
+
+
+
+<masonry 
+          :cols="{default: 4, 1000: 3, 700: 2, 300: 1}"
+          :gutter="{default: '30px', 700: '15px'}"
+        >
+          <div
+            v-for="photo in $page.photos.edges"
+            :key="photo.id"
+            class="m-3 rounded-lg shadow-lg overflow-hidden"
+          >
+          
+            <g-link :to="photo.node.slug.current">
+
+            <g-image
+              v-if="photo.node.mainImage"
+              alt="Cover image"
+              class="justify-center"
+              :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).width(800).url()"
+            />
+            
+            </g-link>
+          </div>
+        </masonry>
+
+
+
+        
+      </div> <!-- end photos -->
+    </div>
+
+    <div class="overflow-x-hidden">
+      <div class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative">
         <h2 class="font-bold mb-6" id="projects">Recent Posts:</h2>
 
         <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
@@ -155,6 +194,50 @@
 
 <page-query>
 query HomePosts {
+  metadata {
+    sanityOptions {
+      projectId
+      dataset
+    }
+  }
+  photos: allSanityPost (sortBy: "publishedAt", order: DESC, limit: 6) {
+    totalCount
+    pageInfo {
+      totalPages
+      currentPage
+    }
+    edges {
+      node {
+        id
+        title
+        publishedAt (format: "MMMM D, Y")      
+        _rawExcerpt
+        mainImage {
+          asset {
+            _id
+            url
+          }
+          caption
+          alt
+          hotspot {
+            x
+            y
+            height
+            width
+          }
+          crop {
+            top
+            bottom
+            left
+            right
+          }
+        }  
+        slug {
+          current
+        }
+      }
+    }
+  }
   posts: allPost (limit: 4, sortBy: "date", order: DESC, filter: { published: { eq: true }}) {
     edges {
       node {
@@ -173,7 +256,15 @@ query HomePosts {
 </page-query>
 
 <script>
+import Vue from 'vue'
+import VueMasonry from 'vue-masonry-css'
+
+Vue.use(VueMasonry)
+
 export default {
+  components: {
+    VueMasonry
+  },
   data() {
     return {
       formData: {}
