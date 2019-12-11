@@ -30,18 +30,10 @@
 
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2">{{ post.node.title }}</div>
-          <!-- TODO don't like the name blurb, so wish to spend time on naming decisions -->
-          <!-- should work like tweets and work like a micro-blog -->
-          <!-- TODO the text also needs conversion from block format -->
-          <!-- Refer to the nfolio.4 project for guidance.... -->
-          <!-- TODO I think the text can be corrected via the UI -->
-          <!--<p class="text-gray-700 text-base">{{ post.excerpt }}</p>-->
           <div class="text-lg mb-4">
-            <!-- {{ post.node.summary }} -->
             <span>{{post.node.publishedAt}}</span>
           </div>
           <div class="text-lg mb-4">
-            <!-- {{ post.node.summary }} -->
             <block-content :blocks="post.node._rawExcerpt" /> 
           </div>
           <div class="mb-8 justify-center">
