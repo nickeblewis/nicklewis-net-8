@@ -812,9 +812,9 @@
     rxjs "^6.1.0"
     scroll "^2.0.0"
 
-"@sanity/components@^0.147.0":
-  version "0.147.0"
-  resolved "https://registry.npmjs.org/@sanity/components/-/components-0.147.0.tgz#5450deda5e9a42fdb77c0df35c771392481beff3"
+"@sanity/components@^0.147.2":
+  version "0.147.2"
+  resolved "https://registry.npmjs.org/@sanity/components/-/components-0.147.2.tgz#c657e942b48bf1821f5d29bbb9086477e6b4c01a"
   dependencies:
     "@sanity/date-input" "0.147.0"
     "@sanity/imagetool" "0.147.0"
@@ -843,16 +843,16 @@
     rxjs "^6.5.3"
     string-hash "^1.1.3"
 
-"@sanity/core@^0.147.0":
-  version "0.147.0"
-  resolved "https://registry.npmjs.org/@sanity/core/-/core-0.147.0.tgz#c990623ca055c163790e198ddf615d191b45a227"
+"@sanity/core@^0.147.2":
+  version "0.147.2"
+  resolved "https://registry.npmjs.org/@sanity/core/-/core-0.147.2.tgz#f461e5062405d539b7a1f0d5a6523ec9e4081655"
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.4"
     "@babel/preset-env" "^7.7.4"
     "@babel/preset-react" "^7.7.4"
     "@babel/register" "^7.7.4"
     "@sanity/check" "0.147.0"
-    "@sanity/export" "0.147.0"
+    "@sanity/export" "0.147.2"
     "@sanity/generate-help-url" "0.147.0"
     "@sanity/import" "0.147.0"
     "@sanity/mutator" "0.147.0"
@@ -940,9 +940,9 @@
     "@sanity/generate-help-url" "0.147.0"
     "@sanity/rich-date-input" "0.147.0"
 
-"@sanity/default-layout@^0.147.0":
-  version "0.147.0"
-  resolved "https://registry.npmjs.org/@sanity/default-layout/-/default-layout-0.147.0.tgz#9468d412380156732a0a768d56380b8afdc7fc2e"
+"@sanity/default-layout@^0.147.2":
+  version "0.147.2"
+  resolved "https://registry.npmjs.org/@sanity/default-layout/-/default-layout-0.147.2.tgz#41483e7ac27bd37ee156dcc767dd5c765997aaa9"
   dependencies:
     "@sanity/generate-help-url" "0.147.0"
     is-hotkey "^0.1.4"
@@ -961,12 +961,12 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@^0.147.0":
-  version "0.147.0"
-  resolved "https://registry.npmjs.org/@sanity/desk-tool/-/desk-tool-0.147.0.tgz#1719c0a9841125a91a1f82b79e61303492f5895e"
+"@sanity/desk-tool@^0.147.2":
+  version "0.147.2"
+  resolved "https://registry.npmjs.org/@sanity/desk-tool/-/desk-tool-0.147.2.tgz#da5e57b9e20d35d9cd1bdbcfb403856d1b90cea2"
   dependencies:
     "@sanity/data-aspects" "0.147.0"
-    "@sanity/form-builder" "0.147.0"
+    "@sanity/form-builder" "0.147.2"
     "@sanity/generate-help-url" "0.147.0"
     "@sanity/mutator" "0.147.0"
     "@sanity/schema" "0.147.0"
@@ -1023,9 +1023,9 @@
     eventsource "^1.0.6"
     eventsource-polyfill "^0.9.6"
 
-"@sanity/export@0.147.0":
-  version "0.147.0"
-  resolved "https://registry.npmjs.org/@sanity/export/-/export-0.147.0.tgz#1db5e74a6d00ec0713ae95f5db7fd8cc3e980399"
+"@sanity/export@0.147.2":
+  version "0.147.2"
+  resolved "https://registry.npmjs.org/@sanity/export/-/export-0.147.2.tgz#34c2cfda0fb22e1bd4913944737bade6d4eb008c"
   dependencies:
     archiver "^2.1.1"
     debug "^3.1.0"
@@ -1036,9 +1036,9 @@
     simple-get "^3.0.2"
     split2 "^2.1.1"
 
-"@sanity/form-builder@0.147.0":
-  version "0.147.0"
-  resolved "https://registry.npmjs.org/@sanity/form-builder/-/form-builder-0.147.0.tgz#98cad83be0b07db1f0f6ac00ffa1bab4f9ac629b"
+"@sanity/form-builder@0.147.2":
+  version "0.147.2"
+  resolved "https://registry.npmjs.org/@sanity/form-builder/-/form-builder-0.147.2.tgz#37e3b77c35fc961cbdb923c300eac7aa568898ca"
   dependencies:
     "@sanity/block-tools" "0.147.0"
     "@sanity/generate-help-url" "0.147.0"
@@ -1422,8 +1422,8 @@
   resolved "https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
 
 "@types/node@*":
-  version "12.12.16"
-  resolved "https://registry.npmjs.org/@types/node/-/node-12.12.16.tgz#3ebcbd7bf978fa4c5120fee8be57083271a8b3ac"
+  version "12.12.17"
+  resolved "https://registry.npmjs.org/@types/node/-/node-12.12.17.tgz#191b71e7f4c325ee0fb23bc4a996477d92b8c39b"
 
 "@types/node@^8.0.0":
   version "8.10.59"
@@ -5716,12 +5716,18 @@ normalize.css@^5.0.0:
   resolved "https://registry.npmjs.org/normalize.css/-/normalize.css-5.0.0.tgz#7cec875ce8178a5333c4de80b68ea9c18b9d7c37"
 
 npm-bundled@^1.0.1:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/npm-bundled/-/npm-bundled-1.1.0.tgz#2e8fdb7e69eff2df963937b696243316537c284b"
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/npm-bundled/-/npm-bundled-1.1.1.tgz#1edd570865a94cdb1bc8220775e29466c9fb234b"
+  dependencies:
+    npm-normalize-package-bin "^1.0.1"
+
+npm-normalize-package-bin@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/npm-normalize-package-bin/-/npm-normalize-package-bin-1.0.1.tgz#6e79a41f23fd235c0623218228da7d9c23b8f6e2"
 
 npm-packlist@^1.1.6:
-  version "1.4.6"
-  resolved "https://registry.npmjs.org/npm-packlist/-/npm-packlist-1.4.6.tgz#53ba3ed11f8523079f1457376dd379ee4ea42ff4"
+  version "1.4.7"
+  resolved "https://registry.npmjs.org/npm-packlist/-/npm-packlist-1.4.7.tgz#9e954365a06b80b18111ea900945af4f88ed4848"
   dependencies:
     ignore-walk "^3.0.1"
     npm-bundled "^1.0.1"
