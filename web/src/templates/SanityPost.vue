@@ -37,7 +37,7 @@
         />
       </div>
       <div class="mb-8">
-        <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
+        <g-link to="/photoblog" class="font-bold uppercase">Back to Index</g-link>
       </div>
       <!-- TODO - make this a component!!!! -->
       <div class="flex flex-col sm:flex-row justify-between items-center mb-16">
