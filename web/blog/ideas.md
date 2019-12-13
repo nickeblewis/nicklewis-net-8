@@ -21,6 +21,39 @@ tags:
 
 2020 is approaching fast and a whole new decade beckons. Recent tech has been just too damn exciting and I think it will become more so in the next decade. I have set aside some time to jot down a number of things I wish to explore and share with you via this blog next year and way beyond that. I'm buzzing!
 
+I pick out 10 (1 for each year in the decade, see what I did there?) things that will evolve so rapidly in the next few years, god knows what they will be like in 2030? Well if this post still exists at that point in time, we can look back and see...
+
+I will delve more into all of these topics in 2020 as I explore each one in more depth, I've always fancied improving the automation of our home and perhaps investing in a solar panel or two.
+
+- [ ] ten subjects I can rabbit on about
+- Smartphones as main cameras, has the time come?
+  - quality is now very good, not just "good" but "very good" plus the computational or AI possibilities open up a whole host of choices for people to edit their images on the go. Will the time come when you no longer need to download to a PC to edit? I can confidently say that it is already possible right mnow
+- Drones and unmanned flight
+- Future of photography
+- Home automation
+- Electric cars
+- Self-powered homes
+- Super powerful laptops
+- Artificial Intelligence
+- The future of the Web and Mobile
+- Programming in the 2020s
+- The future of work
+
+- [ ] Maybe...
+- Will we eat less meat?
+- The future of medicine
+- Will any of us experience space flight?
+- Social media
+- Banking
+- ??
+- ??
+- ??
+- ??
+- ??
+
+
+
+
 # Connecting IA Writer with this site
 - did have it working but now don't
 
