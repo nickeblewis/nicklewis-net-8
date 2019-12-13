@@ -2,13 +2,20 @@
 title: Ideas for the next decade
 slug: ideas-for-the-next-decade
 date: 2019-12-12
-summary: Ideas
+summary: Do not publish this article as this is my starting point for all ideas. Though I could create an ideas list for peoples inspiration entitled ideas for the next decade as a spin off from this to go out the last week of the year
 published: false
 section: updates
 sub: website
 tags: 
  - ideas
 ---
+
+# Articles that are ready and should go out now
+- My jokey coffee shop piece
+- Portsmouth (which has already gone out)
+- Italian Scooters next week or maybe something more solid if I get it written in time
+
+# 2020
 2020 is approaching fast and a whole new decade beckons. Recent tech has been just too damn exciting and I think it will become more so in the next decade. I have set aside some time to jot down a number of things I wish to explore and share with you via this blog next year and way beyond that. I'm buzzing!
 
 # Code
@@ -46,7 +53,26 @@ List of concepts I wish to explore and share with other developers out there, mo
 
 - [ ] Will rethink the headings for this doc
 
+# Notion
+
 ## Introduction to Notion.so
+- Where to find it
+- A quick tour of it's features
+- Have a look at my public content for an example
+
+
+## Using Notion.so to run your life
+I use Notion to run my business but the challenge is in knowing how best to use the tool because of it's flexibility, there are umpteen ways you can use it. My suggestions here aren't gospel, just ideas but they have become reliable enough for me to find useful and help me (a very disorganised person) cope better and not lose my rag with things
+
+## Using Notion to write markdown articles
+- Start off capturing articles in Notion
+- flesh them out
+- complete them
+- export the article to your gridsome site - how?
+  - Export as a markdown file complete with images
+  - Drop into your gridsome blog folder
+
+# More other stuff!
 
 ## Go out, take a stroll and take photos series for Write52
 
