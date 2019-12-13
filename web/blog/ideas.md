@@ -14,11 +14,13 @@ tags:
 # Code
 My main source of income as a freelance/contractor is writing code (sites and apps) and mostly using the ubiqutous JavaScript, it's what this site is built upon (Gridsome). It is in itself a rapidly expanding, fast developing industry and in order to stay up-to-date, I find writing about it helps. There will be a multitude of articles here about this, there is no doubt!
 
+I would love to make some extra revenue out of building online courses and e-books, so capturing my thoughts and ideas against this website is the best way of doing that.
+
 ## code explorations
 
 List of concepts I wish to explore and share with other developers out there, mostly around Vue and JS:
 
-- What's coming up for VueJS in 2020?
+- What's coming up for VueJS in 2020? Well v3 is almost here or is it here?
 - Gridsome, Gatsby and so on
 - Alternatives to Gridsome
 - Sanity.io
@@ -31,17 +33,26 @@ List of concepts I wish to explore and share with other developers out there, mo
     - Training users 
 - Alternatives to Sanity
 - Nuxt
+- Next
+- Yeah what about react?
 - New JS frameworks such as Svelte, oh my!
 - JavaScript
   - re-visit the fundamentals from time to time
 - CSS
 - VueJs
-- Browsers
+- Browsers and their capabilities/differences
 
-## Be a better JS developer
+# Other topics
 
-- re-visit the fundamentals from time to time
+- [ ] Will rethink the headings for this doc
 
+## Introduction to Notion.so
+
+## Go out, take a stroll and take photos series for Write52
+
+## Gridsome/Sanity getting started
+
+How did I build this website, hee are the steps for the more technically minded people out there
 
 ## VUE/Gridsome plugins and components
 
