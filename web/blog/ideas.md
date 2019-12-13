@@ -15,8 +15,15 @@ tags:
 - Portsmouth (which has already gone out)
 - Italian Scooters next week or maybe something more solid if I get it written in time
 
-# 2020
+# 20 things to get excited about in 2020 and the new decade
+- [ ] this is an article idea to get out next week as my last for the year! It will set the agenda for the 2020 blog too
+
+
 2020 is approaching fast and a whole new decade beckons. Recent tech has been just too damn exciting and I think it will become more so in the next decade. I have set aside some time to jot down a number of things I wish to explore and share with you via this blog next year and way beyond that. I'm buzzing!
+
+# Connecting IA Writer with this site
+- did have it working but now don't
+
 
 # Code
 My main source of income as a freelance/contractor is writing code (sites and apps) and mostly using the ubiqutous JavaScript, it's what this site is built upon (Gridsome). It is in itself a rapidly expanding, fast developing industry and in order to stay up-to-date, I find writing about it helps. There will be a multitude of articles here about this, there is no doubt!
