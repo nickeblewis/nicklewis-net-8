@@ -14,8 +14,8 @@
       </div>
       <!-- <div class="markdown-body mb-8" v-html="$page.post.content" /> -->
       <div class="markdown-body mb-8">
-        <masonry 
-          :cols="{default: 4, 1000: 3, 700: 2, 300: 1}"
+        <masonry
+          :cols="{default: 2, 1000: 3, 700: 1}"
           :gutter="{default: '30px', 700: '15px'}"
         >
           <div
@@ -27,7 +27,7 @@
             <g-image
               alt="Cover image"
               class="justify-center"
-              :src="$urlForImage(image, $page.metadata.sanityOptions).width(800).url()"
+              :src="$urlForImage(image, $page.metadata.sanityOptions).width(400).quality(90).url()"
             />
           </div>
         </masonry>

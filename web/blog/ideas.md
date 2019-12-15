@@ -3,7 +3,7 @@ title: Ideas
 slug: article-ideas
 date: 2019-12-12
 summary: Ideas
-published: false
+published: true
 section: updates
 sub: website
 tags: 

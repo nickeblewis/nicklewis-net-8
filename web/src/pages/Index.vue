@@ -39,7 +39,7 @@
         </div>
 
         <masonry
-          :cols="{default: 4, 1000: 3, 700: 2, 300: 1}"
+          :cols="{default: 2, 1000: 3, 700: 1}"
           :gutter="{default: '30px', 700: '15px'}"
         >
           <div
@@ -52,7 +52,7 @@
                 v-if="photo.node.mainImage"
                 alt="Cover image"
                 class="justify-center"
-                :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).width(800).url()"
+                :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).format('webp').width(400).quality(90).url()"
               />
             </g-link>
           </div>

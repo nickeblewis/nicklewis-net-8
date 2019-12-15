@@ -45,7 +45,7 @@
       <div class="px-6 py-4">
         <pagination-posts
           v-if="$page.posts.pageInfo.totalPages > 1"
-          base="/articles"
+          base="/photoblog"
           :totalPages="$page.posts.pageInfo.totalPages"
           :currentPage="$page.posts.pageInfo.currentPage"
         />
