@@ -39,7 +39,7 @@
         />
       </div>
       <div class="mb-8">
-        <g-link to="/photoblog" class="font-bold uppercase">Back to Index</g-link>
+        <g-link to="/articles" class="font-bold uppercase">Back to Index</g-link>
       </div>            
       <Bio />
     </div>
@@ -56,6 +56,7 @@ query Post ($id: ID!) {
   }
   post: sanityPost (id: $id) {
     title
+    _key
     publishedAt (format: "MMMM D, Y")
     _rawExcerpt
     _rawBody
