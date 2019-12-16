@@ -26,9 +26,35 @@
       </div>
     </div>
 
+
     <div class="overflow-x-hidden">
       <div
-        class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative"
+        class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-8 relative"
+      >
+        <h2 class="font-bold mb-6" id="projects">Recent Posts:</h2>
+
+        <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
+          <svg width="170px" height="170px">
+            <use xlink:href="#dots-triangle" />
+          </svg>
+        </div>
+
+        <ul class="text-lg sm:text-xl">
+          <li v-for="post in $page.posts.edges" :key="post.id" class="checkmark mb-6">
+            <div>
+              {{ post.node.section }} -
+              <g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link>
+            </div>
+            <div class="text-lg text-gray-600">{{ post.node.summary }}</div>
+          </li>
+        </ul>
+      </div>
+      <!-- end projects -->
+    </div>
+
+    <div class="overflow-x-hidden">
+      <div
+        class="projects container-inner mx-auto text-xl py-16 mb-8 relative"
       >
         <h2 class="font-bold mb-6" id="projects">Recent Images:</h2>
 
@@ -59,31 +85,6 @@
         </masonry>
       </div>
       <!-- end photos -->
-    </div>
-
-    <div class="overflow-x-hidden">
-      <div
-        class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative"
-      >
-        <h2 class="font-bold mb-6" id="projects">Recent Posts:</h2>
-
-        <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
-          <svg width="170px" height="170px">
-            <use xlink:href="#dots-triangle" />
-          </svg>
-        </div>
-
-        <ul class="text-lg sm:text-xl">
-          <li v-for="post in $page.posts.edges" :key="post.id" class="checkmark mb-6">
-            <div>
-              {{ post.node.section }} -
-              <g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link>
-            </div>
-            <div class="text-lg text-gray-600">{{ post.node.summary }}</div>
-          </li>
-        </ul>
-      </div>
-      <!-- end projects -->
     </div>
 
     <div class="overflow-x-hidden border-gray-200 border-b">
