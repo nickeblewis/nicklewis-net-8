@@ -66,7 +66,12 @@ import PaginationPosts from '../components/PaginationPosts'
 export default {
   metaInfo() {
     return {
-      title: 'Tag: ' + this.$page.tag.title
+      title: 'Tag: ' + this.$page.tag.title,
+      meta: [
+        { key: "twitter:title",name: "twitter:title", content: this.$page.tag.title },
+        { key: "og:title",name: "og:title", content: this.$page.tag.title },
+      ],
+      script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
     }
   },
   components: {

@@ -12,7 +12,6 @@
           class="bg-gray-300 rounded-full px-4 py-2 mr-4 hover:bg-green-300"
         >{{ tag }}</g-link>
       </div>
-      <!-- <div class="markdown-body mb-8" v-html="$page.post.content" /> -->
       <div class="markdown-body mb-8">
         <masonry
           :cols="{default: 2, 1000: 3, 700: 1}"
@@ -105,14 +104,10 @@ query Post ($id: ID!) {
 </page-query>
 
 <script>
-//import Vue from 'vue'
 import Vue from 'vue'
 import BlockContent from '~/components/BlockContent'
 import Bio from '../components/Bio'
 import VueMasonry from 'vue-masonry-css'
-//import {VueMasonryPlugin} from 'vue-masonry';
-
-//Vue.use(VueMasonryPlugin)
 Vue.use(VueMasonry)
 
 export default {
@@ -123,13 +118,19 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$page.post.title
+      title: this.$page.post.title,
+      meta: [
+        { key: "twitter:title",name: "twitter:title", content: this.$page.post.title },
+        { key: "og:title",name: "og:title", content: this.$page.post.title },
+      ],
+      script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
     }
   }
 }
 </script>
 
 <style>
+/* TODO cpmpare with Post.vue which links to CSS file this seems wasteful */
 /* Modified version of: https://github.com/sindresorhus/github-markdown-css */
 
 .markdown-body .octicon {

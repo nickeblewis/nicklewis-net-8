@@ -127,7 +127,13 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$page.post.title
+      title: this.$page.post.title,
+      meta: [
+        { key: "twitter:title",name: "twitter:title", content: this.$page.post.title },
+        { key: "og:title",name: "og:title", content: this.$page.post.title },
+
+      ],
+      script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
     }
   }
 }
