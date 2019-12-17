@@ -111,7 +111,7 @@ import BlockContent from "~/components/BlockContent";
 
 export default {
   metaInfo: {
-    title: "Nick Lewis Photography & Digital"
+    title: "Nick Lewis - Photography"
   },
   components: {
     PaginationPosts,
