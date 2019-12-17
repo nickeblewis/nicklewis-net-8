@@ -8,6 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import author from './documents/author'
 import category from './documents/category'
 import post from './documents/post'
+import article from './documents/article'
 import gallery from './documents/gallery'
 import product from './documents/product'
 import vendor from './documents/vendor'
@@ -39,6 +40,7 @@ export default createSchema({
     siteSettings,
     blockContent,
     post,
+    article,
     gallery,
     product,
     productVariant,
