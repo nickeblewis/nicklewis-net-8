@@ -299,7 +299,7 @@ export default {
     }
   },
   metaInfo: {
-    title: 'Home'
+    title: 'Nick Lewis'
   }
 }
 </script>
