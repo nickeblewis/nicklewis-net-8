@@ -4,6 +4,7 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
 import VueFuse from 'vue-fuse'
+import VueDisqus from 'vue-disqus'
 
 // Import image url builder
 import urlForImage from './utils/urlForImage'
@@ -20,6 +21,7 @@ export default function (Vue, { router, head, isClient }) {
   })
 
   Vue.use(VueFuse)
+  Vue.use(VueDisqus)
   
 
   //Vue.use(VueFbCustomerChat, {

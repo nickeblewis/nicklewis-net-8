@@ -41,6 +41,7 @@
         <g-link to="/articles" class="font-bold uppercase">Back to Index</g-link>
       </div>            
       <Bio />
+       <vue-disqus shortname="nicklewis-net" :identifier="$page.post.title"></vue-disqus>
     </div>
   </Layout>
 </template>

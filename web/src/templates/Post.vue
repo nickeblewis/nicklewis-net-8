@@ -61,7 +61,7 @@
                 </div>
               </div>
 
-              
+              <vue-disqus shortname="nicklewis-net" :identifier="$page.post.title"></vue-disqus>
 
               <div class="flex justify-end w-full">
                 <button
@@ -75,6 +75,7 @@
         </div>
       </div> <!-- end contact-me -->
       <Bio />
+       
     </div>
   </Layout>
 </template>
