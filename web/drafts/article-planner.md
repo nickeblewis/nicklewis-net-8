@@ -1,27 +1,36 @@
----
-title: Ideas for the next decade
-slug: ideas-for-the-next-decade
-date: 2019-12-12
-summary: Do not publish this article as this is my starting point for all ideas. Though I could create an ideas list for peoples inspiration entitled ideas for the next decade as a spin off from this to go out the last week of the year
-published: false
-section: updates
-sub: website
-tags: 
- - ideas
----
-
 # Articles that are ready and should go out now
-- My jokey coffee shop piece
-- Portsmouth (which has already gone out)
-- Italian Scooters next week or maybe something more solid if I get it written in time
+- [*] My jokey coffee shop piece
+- [*] Portsmouth (which has already gone out)
+- [*] Italian Scooters next week or maybe something more solid if I get it written in time
+
+# To follow on from the 2020 article
+The last long form article of 2019 published 18/12/2019 featured 10 key areas of interest, that were:
+
+## 1. Smartphones as main cameras, has the time come
+To follow on from this I want to blog/vlog about the different apps you can use for both photography and video, there are many but for the foreseeable, I want to concentrate on these:
+
+- Native camera app
+- LR camera
+- Filmic
+- DJI Mimo
 
 
+## 2. Drones
+## 3. Future of photography
+## 4. The Gimbal
+## 5. Home automation
+## 6. Electric vehicles
+## 7. Self powered homes
+## 8. AI and ML
+## 9. coding 
+## 10. Future of work
 
-
-
+# Notion.so
 # Connecting IA Writer with this site
 - did have it working but now don't
 
+# Photography and Filmaking
+I want to focus on small scale gear to prove to people they don't need the biggest, most expensive all of the time and how this can be used alongside a more full-size camera kit - together.
 
 # Code
 My main source of income as a freelance/contractor is writing code (sites and apps) and mostly using the ubiqutous JavaScript, it's what this site is built upon (Gridsome). It is in itself a rapidly expanding, fast developing industry and in order to stay up-to-date, I find writing about it helps. There will be a multitude of articles here about this, there is no doubt!

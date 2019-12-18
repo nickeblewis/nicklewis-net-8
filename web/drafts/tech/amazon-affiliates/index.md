@@ -1,0 +1,2 @@
+- [ ] add Amazon affiliate links and create an affiliate profile
+- [ ] Update the 2020 article and others

@@ -1,0 +1,2 @@
+- [ ] get to your know drone better
+- [ ] Flying responsibily

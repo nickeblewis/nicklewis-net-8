@@ -1,0 +1,1 @@
+- [ ] using the shortcuts app and some of my real-life utilities

@@ -1,0 +1,2 @@
+- [ ] round-up of whats on the market
+- [ ] Gimbals such as the Osmo Mobile 3
