@@ -51,13 +51,12 @@ module.exports = {
       options: {
         path: 'blog/**/*.md',
         typeName: 'Post',
-        remakr: {
+        remark: {
           plugins: [
             [ '@noxify/gridsome-plugin-remark-embed', {
-                'enabledProviders' : ['Youtube', 'Twitter', 'Gist', 'JSFiddle'],
+                'enabledProviders' : ['Youtube', 'Twitter', 'Gist'],
             }]
           ]
-
         },
         refs: {
           tags: {
