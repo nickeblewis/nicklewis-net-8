@@ -52,6 +52,9 @@
       <!-- end projects -->
     </div>
 
+    <!-- TODO - Codeschool articles go in here. Will also need a link in the nav and a separate series of pages for it -->
+    <!-- Where will the A to Z stuff go? -->
+
     <div class="overflow-x-hidden">
       <div
         class="projects container-inner mx-auto text-xl py-16 mb-8 relative"
