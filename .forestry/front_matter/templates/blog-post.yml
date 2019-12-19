@@ -27,4 +27,5 @@ fields:
   name: tags
   label: tags
 pages:
+- web/content/blog/Netlify/introducing-netlify-build-plugins.md
 - web/content/blog/wrapping-up.md
