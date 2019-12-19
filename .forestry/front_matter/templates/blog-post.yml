@@ -28,4 +28,5 @@ fields:
   label: tags
 pages:
 - web/content/blog/Netlify/introducing-netlify-build-plugins.md
+- web/content/blog/Netlify/netlify-large-media.md
 - web/content/blog/wrapping-up.md
