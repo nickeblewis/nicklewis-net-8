@@ -26,3 +26,5 @@ fields:
 - type: list
   name: tags
   label: tags
+pages:
+- web/content/blog/wrapping-up.md
