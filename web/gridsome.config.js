@@ -53,8 +53,11 @@ module.exports = {
         typeName: 'Post',
         remark: {
           plugins: [
+            ['gridsome-plugin-remark-codetitle'],
+            [ 'gridsome-plugin-remark-codesandbox' ],
+            [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ],
             [ '@noxify/gridsome-plugin-remark-embed', {
-                'enabledProviders' : ['Youtube', 'Twitter', 'Gist'],
+                'enabledProviders' : ['Youtube', 'Twitter', 'Gist', 'Codepen', 'Spotify'],
             }]
           ]
         },
@@ -89,9 +92,6 @@ module.exports = {
   ],
   transformers: {
     remark: {
-      plugins: [
-        [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
-      ],
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
