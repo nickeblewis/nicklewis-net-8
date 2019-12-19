@@ -55,7 +55,7 @@ module.exports = {
           plugins: [
             ['gridsome-plugin-remark-codetitle'],
             [ 'gridsome-plugin-remark-codesandbox' ],
-            [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ],
+            [ 'gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: true } ],
             [ '@noxify/gridsome-plugin-remark-embed', {
                 'enabledProviders' : ['Youtube', 'Twitter', 'Gist', 'Codepen', 'Spotify'],
             }]
