@@ -53,7 +53,7 @@
     -webkit-text-size-adjust: 100%;
     color: #24292e;
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
     word-wrap: break-word;
   }
@@ -299,7 +299,7 @@
   }
 
   .markdown-body h1 {
-    font-size: 32px;
+    font-size: 2.2rem;
   }
 
   .markdown-body h1,
@@ -308,11 +308,11 @@
   }
 
   .markdown-body h2 {
-    font-size: 24px;
+    font-size: 1.4rem;
   }
 
   .markdown-body h3 {
-    font-size: 20px;
+    font-size: 1.35rem;
   }
 
   .markdown-body h3,
