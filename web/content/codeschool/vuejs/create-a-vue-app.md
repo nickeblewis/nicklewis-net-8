@@ -1,0 +1,2 @@
+- [ ] brief article on how to create a Vue app
+- [ ] may be worth includign something to set up Node if people are learning

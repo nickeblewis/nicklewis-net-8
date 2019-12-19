@@ -1,0 +1,1 @@
+[What is a state management pattern?](https://vuex.vuejs.org/#what-is-a-state-management-pattern)
