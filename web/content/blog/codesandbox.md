@@ -3,12 +3,14 @@ title: Codesandbox
 slug: codesandbox
 date: 2019-12-19
 published: true
-summary: I am building a new section for this site called code-school and will be embedding source code into articles for you to try out an play with
+summary: I am building a new section for this site called code-school and will be
+  embedding source code into articles for you to try out an play with
 section: javascript
 sub: vuejs
 tags:
- - code
- - IDE
+- code
+- IDE
+
 ---
 I am building a new section for this site called code-school and will be embedding source code into articles for you to try out and play with using [Code Sandbox](https://codesandbox.com)
 
@@ -76,4 +78,4 @@ module.exports = {
   ]
 ```
 
-etc etc
+etc etc blah blah
