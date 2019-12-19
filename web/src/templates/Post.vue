@@ -3,16 +3,6 @@
     <div class="container-inner mx-auto my-16">
       <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
       <div class="text-xl text-gray-600 mb-4">{{ $page.post.date }}</div>
-      <!-- TODO - come up with a better UI for these tags and reintroduce them -->
-      <!-- <div class="flex mb-8 text-sm">
-        <g-link
-          :to="tag.path"
-          v-for="tag in $page.post.tags"
-          :key="tag.id"
-          class="bg-gray-300 rounded-full px-4 py-2 mr-4 hover:bg-green-300">
-          {{ tag.title }}
-        </g-link>
-      </div> -->
       <div class="markdown-body mb-8" v-html="$page.post.content" />
       <div class="mb-8">
         <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
@@ -21,25 +11,17 @@
     <div class="overflow-x-hidden">
       <div class="contact-me bg-background-secondary pt-16">
         <div class="container-inner mx-auto text-xl pb-4 relative">
-          
-
-          
-<Bio />
-              <vue-disqus shortname="nicklewis-net" :identifier="$page.post.title"></vue-disqus>
-
-              <div class="flex justify-end w-full">
-                <button
-                  type="submit"
-                  value="submit"
-                  class="block bg-green-700 hover:bg-green-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
-                >Submit</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div> <!-- end contact-me -->
-      
-       
+          <Bio />
+          <vue-disqus shortname="nicklewis-net" :identifier="$page.post.title"></vue-disqus>
+          <div class="flex justify-end w-full">
+            <button
+              type="submit"
+              value="submit"
+              class="block bg-green-700 hover:bg-green-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
+            >Submit</button>
+          </div>          
+        </div>        
+      </div>     
     </div>
   </Layout>
 </template>
