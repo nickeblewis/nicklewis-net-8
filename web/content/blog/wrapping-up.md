@@ -11,7 +11,7 @@ tags:
 - journal
 
 ---
-review....
+No this has nothing to do with wrapping up presents and I am thankful of that because I don’t relish the task. Why is sellotape such a pain to 
 
 contracting
 
