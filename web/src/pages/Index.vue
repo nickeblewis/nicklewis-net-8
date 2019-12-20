@@ -81,7 +81,7 @@
                 v-if="photo.node.mainImage"
                 alt="Cover image"
                 class="justify-center"
-                :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).format('webp').width(400).quality(90).url()"
+                :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).format('jpg').width(400).quality(90).url()"
               />
             </g-link>
           </div>
