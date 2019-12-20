@@ -5,8 +5,8 @@ date: 2019-12-19T00:00:00Z
 summary: Originally I used Wordpress for all of my CMS needs and then for some projects,
   Drupal... However I was never content (excuse the pun) with PHP nor any of its templating systems. Now there
   is JAMStack and I wanted to tell you about the CMS tools I use for this website.
-section: JAMStack
-sub: headless-cms
+section: jamstack
+sub: headless
 published: true
 tags:
 - JAMStack
