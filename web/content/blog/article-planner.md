@@ -1,3 +1,27 @@
+---
+title: Article Planner
+slug: article-planner
+date: 2019-12-20
+published: false
+summary: do not publish
+section: site
+sub: planning
+tags:
+- site
+- planning
+---
+
+# Write52
+
+Think of 52 headings I could jot down and then build articles for them during the year ahead
+
+# Working out what the sections should be
+
+- Sections
+  - write52, with subs of 1-52?
+- Subs
+
+
 # Articles that are ready and should go out now
 - [*] My jokey coffee shop piece
 - [*] Portsmouth (which has already gone out)
