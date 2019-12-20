@@ -2,7 +2,7 @@
 title: Codesandbox
 slug: codesandbox
 date: 2019-12-19
-published: true
+published: false
 summary: I am building a new section for this site called code-school and will be
   embedding source code into articles for you to try out an play with
 section: javascript
