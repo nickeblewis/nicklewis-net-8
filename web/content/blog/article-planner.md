@@ -15,17 +15,121 @@ tags:
 
 Think of 52 headings I could jot down and then build articles for them during the year ahead
 
+## 1. Let's get the year started
+
+- [ ] articles in 2020 will be published on Thursdays starting 2nd Jan
+- [ ] write52/week1/etc etc
+
+Hope you all had a great Christmas break? I am writing this 2 weeks before you will see this post, as I've been taking advantage of some time to plan ahead for my Write52 articles this year. I have begun to write 52 headings and each one is going to focus on ways of running modern websites, the CMS tools, the strategies to follow and some tips on blogging itself. I will also talk about freelancing and contracting, the trials and tribulations of running a tiny Limited Company here in the UK. One thing I need to get my head around is IR35 for example which is why I am going to switch to more freelance work and less contracting in the future.
+
+So that will be my pattern for all Write52 articles during 2020, a fresh start, a bit of a reset.
+
+However I will also be writing some more technical stuff too, taking a deeper dive into the things I do for a living, professionally. However life should never be all work and no play, which is why there will plenty happening on the photoblog section of this site and I will be collating some great walks for everyone to get outdoors and blow away their cobwebs!
+
+So as you can see whilst my brain has begun to relax and unwind, it has turned it's attention to a little bit of "planning ahead". We all do it. We all like to try out something different each year but I do shy away from "New Year Resolutions", I never keep them, do you?
+
+I am going to bite my tongue now by saying; I do have one this year! It is to keep up the rythym of this blog because I am very reliant on this site to pull in new clients but relevant ones! Second to this, better planning and a much higher degree of consistency needs to be employed.
+
+I feel like I'm ready for this. Let's get cracking!
+
+## 2. Reasons not to share everything via Social Media
+- [ ] 9th January
+
+The premise behind this article is to talk about how you can share let's say one photo of an event on social media but link to your full article about the event, thus attracting new unique visitors to your site, your business, your brand. Establishing your own space online is now more important than it ever has been...
+
+## 3. Are online freelance marketplaces worth the time?
+- [ ] 16/01/20
+This week I wanted to talk about those websites where you can bid for freelance gigs and why I avoid them but do sometimes use them to delegate tasks that I can't do. The question I have raised time and time again is - If I don't want to work for peanuts, why should I expect other people to do so? Are we helping further reduce rates across the marketplace? Hence everything is gradually being commodicised (- [ ] is that a word?) and I feel this is not good at all.
+
+## 4. Analyze your analytics the 5 steps you can take to learn from them
+- [ ] 23/01/20
+First off I have been using Netlify Analytics for some time, so some of the information in this article leans towards this particular tool, however some of the tips I'm about to share are valid in many cases. 
+
+- Identify broken links, always check for content that is not being found
+- What do your most popular articles have in common, is there a pattern you can learn from? Investigate why some content may be underperforming 
+- Do not over analyze, just have a look every week
+- ??
+- ??
+
+## 5. Plan ahead and do not rush posts out of the door
+- [ ] 30/01/20
+Way back at the start of this month I talked about planning ahead. I want to talk about how I am going about this and how I now start some articles a few weeks at least beforehand and how some others that perhaps are very dependent on date and time, are pinned to the editorial calendar and are gradually fed words over time. I feel that this leads to a better quality of writing and reading back, posts appear to be less rushed and that is because they no longer are!
+
+I started writing this post on 20th December 2019 along with all that preceded it from the beginning of 2020. It is a different way of working but I figured that this is the way most writers (especially those members of [Write52](https://write52.com)) go about it.
+
+## 6. Keep researching your industry never stand still (06/02/20)
+I am interested to ask for a show of hands and find out what you use for running your website and those you are involved with developing/writing for your clients. The reason I ask is purely for the purposes of research and may be beneficial to the evolution of my own web consultancy business.
+
+## 7. Portable Photography 13/02/20
+- We are soon going on a big trip but I am keeping it secret
+- Fill your camera bag and then take most of it out - yeah seriously!
+- minimal camera gear
+- iphone
+
+## 8. Portable Videography 20/02/20
+- Similar to the previous week but this time picking up on video
+- light gimbals
+- iphone
+- osmo
+
+
+- 9. 27/02
+- 10. 05/03 south africa
+- 12/03
+- 19/03
+- 26/03
+- 02/04
+- 09/04
+- 16/04
+- 23/04
+- 30/04
+- 07/05
+- 14/05
+- 21/05
+- 28/05
+- 04/06
+- 11/06
+- 18/06
+- 25/06
+- 02/07
+- 09/07
+- 16/07
+- 23/07
+- 30/07
+- 06/08
+- 13/08
+- 20/08
+- 27/08
+- 03/09
+- 10/09
+- 17/09
+- 24/09
+- 01/10
+- 08/10
+- 15/10
+- 22/10
+- 29/10
+- 05/11
+- 12/11
+- 19/11
+- 26/11
+- 03/12
+- 10/12
+- 17/12
+- 52. 24/12
+
+
+
+
 # Working out what the sections should be
+
+- [ ] take a look under the dist folder to colalte a list of the sections I have already generated
 
 - Sections
   - write52, with subs of 1-52?
+  - Tech 
+  - Code
 - Subs
-
-
-# Articles that are ready and should go out now
-- [*] My jokey coffee shop piece
-- [*] Portsmouth (which has already gone out)
-- [*] Italian Scooters next week or maybe something more solid if I get it written in time
 
 # To follow on from the 2020 article
 The last long form article of 2019 published 18/12/2019 featured 10 key areas of interest, that were:
