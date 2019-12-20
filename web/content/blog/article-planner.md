@@ -61,7 +61,7 @@ I started writing this post on 20th December 2019 along with all that preceded i
 I am interested to ask for a show of hands and find out what you use for running your website and those you are involved with developing/writing for your clients. The reason I ask is purely for the purposes of research and may be beneficial to the evolution of my own web consultancy business.
 
 ## 7. Portable Photography 13/02/20
-- We are soon going on a big trip but I am keeping it secret
+- We are soon going on a big trip but I am keeping it secret and shall post stuff later
 - Fill your camera bag and then take most of it out - yeah seriously!
 - minimal camera gear
 - iphone
@@ -73,8 +73,14 @@ I am interested to ask for a show of hands and find out what you use for running
 - osmo
 
 
-- 9. 27/02
-- 10. 05/03 south africa
+## 9. Comments versus social media discussion 27/02
+- How do you roll yours? Disqus or Facebook comments
+- Alternatives
+
+
+## 10. My Tech stack 05/03 south africa
+JAMStack rather than WP etc
+
 - 12/03
 - 19/03
 - 26/03
