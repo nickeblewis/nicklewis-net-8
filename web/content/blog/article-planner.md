@@ -24,11 +24,9 @@ Hope you all had a great Christmas break? I am writing this 2 weeks before you w
 
 So that will be my pattern for all Write52 articles during 2020, a fresh start, a bit of a reset.
 
-However I will also be writing some more technical stuff too, taking a deeper dive into the things I do for a living, professionally. However life should never be all work and no play, which is why there will plenty happening on the photoblog section of this site and I will be collating some great walks for everyone to get outdoors and blow away their cobwebs!
+However I will also be writing some more technical stuff too, taking a deeper dive into the things I do for a living, professionally. However life should never be all work and no play, which is why there will plenty happening on the photoblog section of this site and I will be collating some great walks for everyone to get outdoors and blow away their cobwebs via my other blog, the "Rambling Photographer".
 
 So as you can see whilst my brain has begun to relax and unwind, it has turned it's attention to a little bit of "planning ahead". We all do it. We all like to try out something different each year but I do shy away from "New Year Resolutions", I never keep them, do you?
-
-I am going to bite my tongue now by saying; I do have one this year! It is to keep up the rythym of this blog because I am very reliant on this site to pull in new clients but relevant ones! Second to this, better planning and a much higher degree of consistency needs to be employed.
 
 I feel like I'm ready for this. Let's get cracking!
 
