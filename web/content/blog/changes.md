@@ -51,5 +51,5 @@ I love this one especially with the Cyclamen flowers in the foreground
 ![Tree ferns](./_imgs/0269472C-ED84-4215-AFEC-AAB1753440D6_1_105_c.jpeg)
 
 ## Until next time...
-I am heading out to a few places over the coming weeks, so that means the hungry content monster that this blog is, will be well fed! Expect a mixture of Surrey Hills and Christmas Markets!
+I am heading out to a few places over the coming weeks, so that means the hungry content monster that this blog is, will be well fed! Expect a mixture of Surrey Hills and Christmas Markets!!!
 
