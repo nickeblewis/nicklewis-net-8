@@ -27,13 +27,7 @@ module.exports = {
     SanityPost: [
       { path: '/blog/:year/:month/:slug__current'},
       { name: 'Features', path: '/:slug__current'},
-    ],
-    Post: [
-      { path: "/:section/:sub/:slug" },
-      { name: "SubSection", path: "/:section/:slug" },
-      { name: "Sanity", path: "/blog/:year/:month/:slug" }
-    ],
-    Tag: '/tag/:id'
+    ]
   },
   plugins: [
     {
@@ -47,30 +41,66 @@ module.exports = {
       }
     },
     {
-      use: '@gridsome/source-filesystem',
+      use: '@gridsome/vue-remark',
       options: {
-        path: 'content/blog/**/*.md',
-        typeName: 'Post',
-        remark: {
-          plugins: [
-            ['gridsome-plugin-remark-codetitle'],
-            [ 'gridsome-plugin-remark-codesandbox' ],
-            [ 'gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: true } ],
-            [ '@noxify/gridsome-plugin-remark-embed', {
-                'enabledProviders' : ['Youtube', 'Twitter', 'Gist', 'Codepen', 'Spotify'],
-            }]
-          ]
-        },
+        typeName: 'Guide', // Required
+        baseDir: './content/guides', // Where .md files are located
+        pathPrefix: '/guides', // Add route prefix. Optional
+        template: './src/templates/Guide.vue',
         refs: {
           tags: {
             typeName: 'Tag',
-            create: true
-          }
-        }
+            create: true,
+          },
+          series: {
+            typeName: 'Series',
+            create: true,
+          },
+        },
+        plugins: [
+          [
+            'remark-toc',
+            {
+              heading: 'Buildings',
+              maxDepth: 2,
+            },
+          ],
+        ],
+      },
+    },
+    {
+      use: "@gridsome/vue-remark",
+      options: {
+        typeName: "Post",
+        baseDir: "./content/blog",
+        template: "./src/templates/Post.vue",
+        pathPrefix: "/blog",
+        route: "/:section/:sub/:slug",
+        plugins: [
+          [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+        ]
       }
     },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'SinglePage', // Required
+        baseDir: './content/pages', // Where .md files are located
+        pathPrefix: '/', // Add route prefix. Optional
+        template: './src/templates/SinglePage.vue'
+        // plugins: [
+        //   [
+        //     'remark-toc',
+        //     {
+        //       heading: 'Buildings',
+        //       maxDepth: 2,
+        //     },
+        //   ],
+        // ],
+      }
+    }
     /* {
-      // Create posts from markdown files
+      // Create posts from content files
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Post',

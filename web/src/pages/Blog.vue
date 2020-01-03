@@ -42,7 +42,7 @@ query Posts ($page: Int) {
         title
         date (format: "MMMM D, Y")
         summary
-        timeToRead
+      
         path
       }
     }
