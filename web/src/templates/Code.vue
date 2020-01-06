@@ -10,6 +10,7 @@
         mb-8
         max-h-full
         sm:flex sm:items-center sm:justify-center"
+        v-if="$page.code.coverImage"
       :style="`background-image: url('${$page.code.coverImage.src}')`">
         <span class="stripe-shadow-white max-w-xl mx-auto p-4 font-bold text-3xl uppercase leading-none tracking-wide">
             {{$page.code.city}}
