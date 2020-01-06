@@ -69,6 +69,34 @@ module.exports = {
       },
     },
     {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Code', // Required
+        baseDir: './content/code', // Where .md files are located
+        pathPrefix: '/code', // Add route prefix. Optional
+        template: './src/templates/Code.vue',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: true,
+          },
+          series: {
+            typeName: 'Series',
+            create: true,
+          },
+        },
+        plugins: [
+          [
+            'remark-toc',
+            {
+              heading: 'Coding',
+              maxDepth: 2,
+            },
+          ],
+        ],
+      },
+    },
+    {
       use: "@gridsome/vue-remark",
       options: {
         typeName: "Post",
