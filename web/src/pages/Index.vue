@@ -3,7 +3,7 @@
     <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
         <div class="leading-tight">Nick Lewis</div>
-        <div class="text-green-700 leading-tight">Freelance Coder, Writer and Photographer</div>
+        <div class="text-green-700 leading-tight">Software Development & Integration Consultancy</div>
       </div>
       <div class="mt-8 sm:mt-0">
         <g-image src="../../static/developer.svg" alt="hero" class="mx-auto sm:mx-0" />
@@ -13,8 +13,14 @@
 
     <div class="container-inner mx-auto">
       <p
+        class="font-bold text-lg sm:text-xl"
+      >
+      I am actively seeking new client opportunities for the year ahead. Please contact me to discuss your requirements. 
+      </p>
+      <br/>
+      <p
         class="text-lg sm:text-xl"
-      >I have worked for many years in the tech industry. I am a highly experienced front-end web developer who specialises in VueJS/Gridsome at the current point in time. I am setting out to write about my experience through this website and hope that my blog posts and documentation can help you in some way, whether you are trying to get your head around the latest tech or are seeking the kind of consultancy services I offer on a freelance basis.</p>
+      >I have 25 years experience in the software industry. I am a highly experienced front-end web developer who specialises in VueJS/Gridsome at the current point in time. I am setting out to write about my experience through this website and hope that my blog posts and documentation can help you in some way, whether you are trying to get your head around the latest tech or are seeking the kind of consultancy services I offer on a freelance basis.</p>
 
       <div class="flex justify-between items-center py-6">
         <div class="w-full sm:w-1/2 px-8 py-8 sm:py-0">
