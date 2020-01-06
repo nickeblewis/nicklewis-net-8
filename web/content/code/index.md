@@ -19,3 +19,7 @@ flavio copes
 vueschool
 eggheads
 codepen
+
+what to learn next?
+
+what should you spend more time learning?
