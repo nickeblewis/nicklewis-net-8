@@ -33,9 +33,6 @@
           <li class="mr-8 mb-6 lg:mb-0">
             <g-link to="/blog" class="text-copy-primary hover:text-gray-600">Blog</g-link>
           </li>
-          <li>
-            <g-link to="/articles" class="text-copy-primary hover:text-gray-600">Photo Blog</g-link>
-          </li>
         </ul>
       </nav>
     </header>
