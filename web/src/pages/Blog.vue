@@ -6,7 +6,6 @@
         <div class="text-copy-secondary mb-4">
           <span>{{ post.node.date }}</span>
           <span> &middot; </span>
-          <span>{{ post.node.timeToRead }} min read</span>
         </div>
 
         <div class="text-lg mb-4">
