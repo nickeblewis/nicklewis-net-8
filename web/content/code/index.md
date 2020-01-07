@@ -4,7 +4,7 @@ summary: Some summary text
 city: what
 chapter: 0
 date: 2019-12-28
-coverImage: ./_imgs/cover-0.jpg
+coverImage: ./_imgs/iStock-1005771222.jpg
 ---
 Welcome to the Code section of this website. Bookmark this page and check back from time to time, as I am going to write about the programming business, what I know already, what I am actively learning myself and between us we shall become better developers (hopefully!). Join me on this journey. Some of this content will be free and some will be subscription based.
 
@@ -17,7 +17,7 @@ Throughout this site wherever I refer to PHP, I will pretty much be talking abou
 I used to work with .NET but haven't used it in a number of years since front-end work has distracted me from my old path, which was predominantly .NET. Will I get back into it? I am not certain at this stage.
 
 # JavaScript
-The language i work with the most often and typically through Node, React and Vue. Vue and Laravel work well together as a complete stack. You could also use Node as a back-end or any other RESTful API out there.
+The language i work with the most often and typically through Angular, Node, React and Vue. Vue and Laravel work well together as a complete stack. You could also use Node as a back-end or any other RESTful API out there. QUite often you will come across .NET and Angular in conjunction with eachother.
 
 # Python
 A new one on me to be honest but I am going to learn it in 2020 and write about it on this website. I know that Python can be fun and that we could do funky stuff with it such as fly drones!
@@ -46,3 +46,20 @@ codepen
 what to learn next?
 
 what should you spend more time learning?
+
+## Currently researching
+My role in this business is to constantly keep one eye on new developments, as much as well established tech. Here is my checklist and I will always look to create articles for many of these things:
+
+- [ ] https://medium.com/javascript-scene/the-typescript-tax-132ff4cb175b
+- [ ] https://css-tricks.com/new-es2018-features-every-javascript-developer-should-know/
+- [ ] https://javascriptweekly.com/link/81864/a1f684902a
+- [ ] https://javascriptweekly.com/link/81865/a1f684902a
+- [ ] https://javascriptweekly.com/link/81868/a1f684902a
+- [ ] https://javascriptweekly.com/link/81871/a1f684902a
+
+https://flaviocopes.com/javascript-flatten-array/
+https://flaviocopes.com/javascript-nullish-coalescing/
+https://flaviocopes.com/netlify-fix-trailing-slash-rewrite/
+
+https://flaviocopes.com/data-models/
+https://flaviocopes.com/entity-relationship/
