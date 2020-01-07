@@ -31,7 +31,7 @@
         :chapters="$page.code.series.belongsTo.edges.map(edge => edge.node)"/>
     </section>
     <section  id="content" class="content px-4 max-w-xl mx-auto">
-      <vue-remark-content class="flow"/>
+      <vue-remark-content class="markdown-body mb-8"/>
     </section>
     <section  id="navigation-bottom"  v-if="$page.code.series && $page.code.chapter > 0" class="content px-4 max-w-xl mx-auto">
       <series-navigation
@@ -97,62 +97,4 @@ export default {
 }
 </script>
 
-<style>
-/* .grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
-}
-#image {
-  grid-area: image;
-}
-#header {
-  grid-area: header;
-}
-#content {
-  grid-area: content;
-}
-#navigation-top {
-  grid-area: navigation-top;
-}
-#navigation-bottom {
-  grid-area: navigation-bottom;
-}
-@screen lg {
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-      "image image header header"
-      "image image content content"
-      " . navigation-top content content"
-  }
-} */
-
-
-
-.content h2, h3 {
-  @apply font-bold;
-}
-.content h2 {
-  @apply text-2xl leading-none p-2 inline-block;
-}
-.content h3 {
-  @apply text-lg;
-}
-.content  ul {
-  list-style-type: square;
-}
-/* .content  ul > li {
-  @apply mb-2;
-} */
-.guide-cover {
-  height: 320px;
-}
-
-.content #buildings + ul, .content nav > ul {
-  @apply list-none;
-}
-/* .content #buildings + ul > li, .content nav > p, .content nav > ul > li {
-  @apply mb-1;
-} */
-</style>
+<style src="../css/github-markdown.css" />
