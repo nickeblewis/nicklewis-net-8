@@ -11,6 +11,27 @@ tags:
 - planning
 ---
 
+# Articles/Tutorials/Explanations
+
+## For the client
+The following articles serve as explanations of what I do and how such things could be of interest to clients current and future
+
+### Let us build a custom dashboard for your data
+An article and demo project that illustrates how to leverage data from a popular platform via it's API
+
+## For the developer
+The following articles are aimed at other devs and these should be part of a subscription based service
+- Potential for substack material
+
+### Building a platform with Laravel and Vue
+- Follow my progress as I build an online teaching platform using laravel and vue
+- I have decided to build a platform for delivering my own online courses, first of all I need to build the platform itself and then later on feed it with lessons! How should I tackle such an endeavour? I decided to diarise the process, to track it's progress and to share a few useful lessons along the way
+- The site will be known as "headforcode"
+- Speccing out what the site needs to achieve
+- What do I need to host this with?
+- Setting up my dev environment to work with Laravel
+- Why use Laravel and not something else? What are the alternatives? What are the costs?
+
 # Write52
 
 Think of 52 headings I could jot down and then build articles for them during the year ahead
