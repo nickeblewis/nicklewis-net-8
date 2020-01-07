@@ -6,6 +6,7 @@
         <div class="text-copy-secondary mb-4">
           <span>{{ post.node.date }}</span>
           <span> &middot; </span>
+          <span>{{ post.node.section }}</span>
         </div>
 
         <div class="text-lg mb-4">
@@ -41,7 +42,7 @@ query Posts ($page: Int) {
         title
         date (format: "MMMM D, Y")
         summary
-      
+        section
         path
       }
     }
