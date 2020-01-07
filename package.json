@@ -15,7 +15,6 @@
   },
   "devDependencies": {
     "@sanity/cli": "^0.144.0",
-    "lerna": "^3.16.4",
-    "vue-masonry-css": "^1.0.3"
+    "lerna": "^3.16.4"
   }
 }
