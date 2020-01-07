@@ -63,3 +63,5 @@ https://flaviocopes.com/netlify-fix-trailing-slash-rewrite/
 
 https://flaviocopes.com/data-models/
 https://flaviocopes.com/entity-relationship/
+
+- [ ] cover netlify features in articles
