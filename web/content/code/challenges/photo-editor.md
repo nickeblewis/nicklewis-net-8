@@ -179,7 +179,7 @@ Then in ```index.html```
 </html>
 ```
 
-<captioned-image alt="Photo Editor" caption="Photo Editor" imgFile="/images/code/screenshots/photo-editor-1.jpg" format="v"/>
+<captioned-image alt="Photo Editor" caption="Photo Editor" imgFile="/images/code/screenshots/photo-editor-1.png" format="v"/>
 
 ### Problems
 There are clashes with Bootstrap Vue and vue-image-editor that breaks the latter, does this happen in this standalone the same as it does for the establish app I am involved in building for my contract client.
