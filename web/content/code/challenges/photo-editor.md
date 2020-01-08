@@ -179,10 +179,11 @@ Then in ```index.html```
 </html>
 ```
 
-<captioned-image alt="Photo Editor" caption="Photo Editor" imgFile="/uploads/photo-editor-1.png" format="v"/>
+<captioned-image alt="Photo Editor" caption="Photo Editor" imgFile="/code/screenshots/photo-editor-1.png" format="v"/>
 
 ### Problems
 There are clashes with Bootstrap Vue and vue-image-editor that breaks the latter, does this happen in this standalone the same as it does for the establish app I am involved in building for my contract client.
+
 
 Stale npm modules - a drawback with OSS projects and npm is no exception
 
