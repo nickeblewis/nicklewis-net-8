@@ -189,7 +189,32 @@ Stale npm modules - a drawback with OSS projects and npm is no exception
 
 ## Can we fix these issues?
 
+Lets see...
+
+## PhotoEditor SDK
+Start off the project in the same way as before..
+
+```vue ui```
+
+I then took the following steps to create a new project
+
+- Create a new project called _photoeditor_
+- Scaffold project without instructions
+- Selected standard to generate my site based on an earlier preset
+- Clicked on **create project**
+
+Next...
+
+```npm i bootstrap-vue vue-pesdk photoeditorsdk react react-dom```
+
+Why do we need to include react? That is a bit of a concern for me, why include a second element of framework code? Let's roll with this for the moment and see how it goes.
+
+
+
+
 
 ## Finding an alternative
 
 Are there alternative options to @toast-ui/vue-image-editor?
+
+- photoeditorsdk, as described under https://docs.photoeditorsdk.com/guides/html5/v4/introduction/getting_started
