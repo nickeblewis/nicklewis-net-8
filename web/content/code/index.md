@@ -1,11 +1,3 @@
----
-title: All you need is Code
-summary: Some summary text
-city: what
-chapter: 0
-date: 2019-12-28
-coverImage: ./_imgs/iStock-1005771222.jpg
----
 Welcome to the Code section of this website. Bookmark this page and check back from time to time, as I am going to write about the programming business, what I know already, what I am actively learning myself and between us we shall become better developers (hopefully!). Join me on this journey. Some of this content will be free and some will be subscription based.
 
 What I know, don't know, would love to know or perhaps not too fussed about...
@@ -49,6 +41,10 @@ what should you spend more time learning?
 
 ## Currently researching
 My role in this business is to constantly keep one eye on new developments, as much as well established tech. Here is my checklist and I will always look to create articles for many of these things:
+
+- [ ] Develop your own NPM package - https://dev.to/therealdanvega/creating-your-first-npm-package-2ehf
+    - [ ] [Creating my own version of this article](howto/create-a-npm-package)
+    - [ ] Share across LinkedIn
 
 - [ ] https://medium.com/javascript-scene/the-typescript-tax-132ff4cb175b
 - [ ] https://css-tricks.com/new-es2018-features-every-javascript-developer-should-know/
