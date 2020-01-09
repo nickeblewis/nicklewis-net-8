@@ -23,3 +23,4 @@ Web API
 
 https://blog.bitsrc.io/getting-started-with-vue-js-in-net-core-using-visual-studio-efbb43703630 looks good and worth trying out using the Surface
 
+https://learn-blazor.com/getting-started/what-is-blazor/
