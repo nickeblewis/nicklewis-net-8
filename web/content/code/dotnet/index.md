@@ -14,7 +14,7 @@ Let's see where things are at, so at the time of writing
 
 .NET MVC or .NET Core?
 
-C#
+- [ ] C# -> I could do with finding a good book on the topic that summarises the language
 ASP.Net MVC
 Vue.js
 Web API
