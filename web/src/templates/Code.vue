@@ -21,7 +21,7 @@
       <div class="px-4 max-w-xl mx-auto">
         <h1 class="text-3xl font-bold leading-none mb-2">{{ $page.code.title }}</h1>
         <!-- <hr class="border-black border-b-2 mb-4"/> -->
-        <p class="text-xl ">{{ $page.code.summary }}</p>
+        <!-- <p class="text-xl ">{{ $page.code.summary }}</p> -->
       </div>
     </header>
     <section id="navigation-top" v-if="$page.code.series && $page.code.chapter > 0" class="content px-4 max-w-xl mx-auto">
