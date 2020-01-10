@@ -1,0 +1,1 @@
+- [ ] get involved with open-source, make PRs to Github and help other people out

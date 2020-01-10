@@ -1,0 +1,2 @@
+- [ ] Re-learning something I've worked with in the past that has moved on quite a bit since
+- [ ] Bookmarked a great looking book on Kindle (see iPad)

@@ -1,0 +1,2 @@
+- [ ] Can you schedule builds in Netlify instead of building whenever code is pushed?
+- [ ] Or would it be better to have a git-flow process in place i.e. dev branch for testing and master for live releases?
