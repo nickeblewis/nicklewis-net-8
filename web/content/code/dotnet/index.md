@@ -24,3 +24,5 @@ Web API
 https://blog.bitsrc.io/getting-started-with-vue-js-in-net-core-using-visual-studio-efbb43703630 looks good and worth trying out using the Surface
 
 https://learn-blazor.com/getting-started/what-is-blazor/
+
+- [ ] currently reading the excellent book on .NET Core 3.0 and C# 8.0 by Mark J Price, published by Packt (who are great). It's easy to read and has taught me some new things already plus refreshed my memory of countless older stuff
