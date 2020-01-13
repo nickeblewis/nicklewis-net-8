@@ -1,0 +1,1 @@
+- [ ] refresh on what I know about this, anything in the current book at all and where else can I go for more up-to-date information?

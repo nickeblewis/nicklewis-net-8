@@ -31,6 +31,9 @@
         :chapters="$page.code.series.belongsTo.edges.map(edge => edge.node)"/>
     </section>
     <section  id="content" class="content px-4 max-w-xl mx-auto">
+      <div class="markdown-body mb-8">
+        Please note that this section of the site is my place for tracking what I am learning and that it may not be fully refined just yet. So please bear this in mind if you have stumbled upon this page via a Google search :-)
+      </div>
       <vue-remark-content class="markdown-body mb-8"/>
     </section>
     <section  id="navigation-bottom"  v-if="$page.code.series && $page.code.chapter > 0" class="content px-4 max-w-xl mx-auto">

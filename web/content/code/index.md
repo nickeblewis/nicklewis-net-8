@@ -1,4 +1,4 @@
-Welcome to the Code section of this website. Bookmark this page and check back from time to time, as I am going to write about the programming business, what I know already, what I am actively learning myself and between us we shall become better developers (hopefully!). Join me on this journey. Some of this content will be free and some will be subscription based.
+Welcome to the Code section of this website, my Magnum Opus, that I hope will be useful for other developers out there. Bookmark this page and check back from time to time, as I am going to write about the programming business, what I know already, what I am actively learning myself and between us we shall become better developers (hopefully!). Join me on this journey. Some of this content will be free and some will be subscription based.
 
 What I know, don't know, would love to know or perhaps not too fussed about...
 
