@@ -1,0 +1,3 @@
+# Are online freelance marketplaces worth your time?
+
+This week I wanted to talk about those websites where you can bid for freelance gigs and why I avoid them but do sometimes use them to delegate tasks that I can't do. The question I have raised time and time again is - If I don't want to work for peanuts, why should I expect other people to do so? Are we helping further reduce rates across the marketplace? Hence everything is gradually being commodicised (- [ ] is that a word?) and I feel this is not good at all.
