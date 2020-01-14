@@ -1,0 +1,1 @@
+WASM = Web Assembly (check out Blazor?)

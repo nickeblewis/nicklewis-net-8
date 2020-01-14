@@ -1,0 +1,2 @@
+- [ ] Azure Devops https://dev.azure.com
+- [ ] ARM Templates https://azure.microsoft.com/en-gb/resources/templates/
