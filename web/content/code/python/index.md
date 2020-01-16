@@ -21,4 +21,4 @@ DataCamp
 Coursera
 MIT
 
-
+https://code.visualstudio.com/docs/python/jupyter-support
