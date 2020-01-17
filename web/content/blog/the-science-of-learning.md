@@ -1,0 +1,1 @@
+It may sound strange that the best way to learn something is by teaching it and this can apply to so many different lines of work and skill. So in my case this would be programming and photography.
