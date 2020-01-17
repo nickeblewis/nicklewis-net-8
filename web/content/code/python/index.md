@@ -22,3 +22,9 @@ Coursera
 MIT
 
 https://code.visualstudio.com/docs/python/jupyter-support
+
+and also this is a good article...
+
+https://www.linkedin.com/pulse/jupyter-notebook-visual-studio-code-bikash-sundaray/?utm_campaign=News&utm_medium=Community&utm_source=DataCamp.com
+
+- [ ] How about an article called discovering Python with Visual Studio Code??
