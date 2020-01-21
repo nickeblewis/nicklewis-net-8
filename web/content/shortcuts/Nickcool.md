@@ -1,9 +1,9 @@
 ---
 title: 		Contribute
-date: 2020-01-21T10:14:02Z
+date: 2020-01-21T10:19:08Z
 author: Nick Lewis
 layout: post
-slug: %09%09contribute.markdown
+slug: Nickcool.md
 summary: xxx
 section: xxx
 ---
