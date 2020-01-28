@@ -2,7 +2,7 @@
 
 Try skillshare
 
-# WHat are Pandas?
+# What are Pandas?
 
 Giles McMullen explains via his YouTube channel, and they can be used for carrying out data analysis such as breaking down complex sets of data
 
@@ -14,7 +14,7 @@ Giles McMullen explains via his YouTube channel, and they can be used for carryi
 - Gaming
 - Machine Learning
 
-# Leraning path
+# Learning path
 
 Kaggle
 DataCamp
@@ -23,8 +23,7 @@ MIT
 
 https://code.visualstudio.com/docs/python/jupyter-support
 
-and also this is a good article...
+# What I've learnt so far
 
-https://www.linkedin.com/pulse/jupyter-notebook-visual-studio-code-bikash-sundaray/?utm_campaign=News&utm_medium=Community&utm_source=DataCamp.com
-
-- [ ] How about an article called discovering Python with Visual Studio Code??
+- Pythonic
+- Flask because I believe that is what Fotech uses

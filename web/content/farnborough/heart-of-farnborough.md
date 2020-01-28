@@ -10,3 +10,21 @@
 - Let’s Love Life Festival
 
 Watch this space!
+
+# January 28th 2020
+
+## Practical organisational steps
+- Timeline
+- Structure
+- Skills Audit
+- Roles and responsibilities
+- Code of conduct
+
+North Camp partners/matters are a good benchmark though
+
+Farnborough society - what are their objectives? some alignment needed
+
+## Actions
+
+## Next meetings
+25th February, possibly Cove Football Club?
