@@ -60,7 +60,39 @@
 
     <!-- TODO - Codeschool articles go in here. Will also need a link in the nav and a separate series of pages for it -->
     <!-- Where will the A to Z stuff go? -->
+ <div class="overflow-x-hidden">
+      <div
+        class="projects container-inner mx-auto text-xl py-16 mb-8 relative"
+      >
+        <h2 class="font-bold mb-6" id="projects">Recent Images:</h2>
 
+        <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
+          <svg width="170px" height="170px">
+            <use xlink:href="#dots-triangle" />
+          </svg>
+        </div>
+
+        <masonry
+          :cols="{default: 2, 1000: 3, 700: 1}"
+          :gutter="{default: '30px', 700: '15px'}"
+        >
+          <div
+            v-for="photo in $page.photos.edges"
+            :key="photo.id"
+            class="m-3 rounded-lg shadow-lg overflow-hidden"
+          >
+            <g-link :to="photo.node.slug.current">
+              <g-image
+                v-if="photo.node.mainImage"
+                alt="Cover image"
+                class="justify-center"
+                :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).format('jpg').width(400).quality(90).url()"
+              />
+            </g-link>
+          </div>
+        </masonry>
+      </div>
+      <!-- end photos -->
     
     </div>
 
