@@ -3,7 +3,7 @@ title: Why I like to think in cafes
 slug: thinking-in-cafes
 date: 2019-12-11
 summary: Allowing time to think
-published: true
+published: false
 section: journal
 sub: thoughts
 tags:
