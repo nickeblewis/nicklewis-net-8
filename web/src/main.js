@@ -37,7 +37,7 @@ export default function (Vue, { router, head, isClient }) {
 
   head.meta.push({
     name: 'description',
-    content: 'Nick Lewis Photography'
+    content: 'Nick Lewis Digital'
   })
 
   head.meta.push({
