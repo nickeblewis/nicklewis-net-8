@@ -3,7 +3,7 @@
     <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
         <div class="leading-tight">Nick Lewis</div>
-        <div class="text-green-700 leading-tight">Software Development & Integration Consultancy</div>
+        <div class="text-green-700 leading-tight">Freelance Developer, Photographer &amp; Writer</div>
       </div>
       <div class="mt-8 sm:mt-0">
         <g-image src="../../static/developer.svg" alt="hero" class="mx-auto sm:mx-0" />
@@ -15,7 +15,7 @@
       <p
         class="font-bold text-lg sm:text-xl"
       >
-      I am actively seeking new client opportunities for the year ahead. Please contact me to discuss your requirements. 
+      I am actively seeking new client opportunities for the year ahead. Please contact me to discuss your requirements.
       </p>
       <br/>
       <p
@@ -93,7 +93,7 @@
         </masonry>
       </div>
       <!-- end photos -->
-    
+
     </div>
 
     <div class="overflow-x-hidden border-gray-200 border-b">
@@ -228,7 +228,7 @@ query HomePosts {
       node {
         id
         title
-        publishedAt (format: "MMMM D, Y")      
+        publishedAt (format: "MMMM D, Y")
         _rawExcerpt
         mainImage {
           asset {
@@ -249,7 +249,7 @@ query HomePosts {
             left
             right
           }
-        }  
+        }
         slug {
           current
         }
@@ -265,7 +265,7 @@ query HomePosts {
         section
         date (format: "MMMM D, Y")
         summary
-        
+
         path
       }
     }
