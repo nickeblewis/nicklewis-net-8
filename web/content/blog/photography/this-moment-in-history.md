@@ -7,7 +7,7 @@ summary: Recently I’ve been doing a small project for the local council organi
   strange times we are going through this year due to Covid
 section: documentary
 sub: 'photography '
-published: false
+published: true
 tags:
 - 'Farnborough '
 
