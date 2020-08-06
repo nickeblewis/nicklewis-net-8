@@ -103,7 +103,7 @@ module.exports = {
         baseDir: "./content/blog",
         template: "./src/templates/Post.vue",
         pathPrefix: "/blog",
-        route: "/:section/:sub/:slug",
+        route: "/:slug",
         plugins: [
           [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
         ]
