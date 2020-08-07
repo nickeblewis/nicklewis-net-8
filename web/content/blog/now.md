@@ -46,3 +46,9 @@ Currently working part-time for a digital agency and filling the rest of the tim
 - https://johno.com/
 - https://github.com/johno/digital-garden
 - https://www.notion.so/nicklewis/johno-digital-garden-WIP-Gatsby-Theme-to-build-your-own-digital-garden-580aa3fd75bb4ca7899044e1e2d96fdd#94ef6372272a4d22be46fe643899a8fa
+
+Here are some other things I've seen and read about that I will split out onto their own pages at some point but want to capture them here.
+
+## Leapers
+- Footprint coffee
+## LinkedIn
