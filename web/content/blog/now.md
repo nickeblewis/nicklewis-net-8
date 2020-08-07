@@ -50,6 +50,6 @@ Currently working part-time for a digital agency and filling the rest of the tim
 * https://github.com/johno/digital-garden
 * https://www.notion.so/nicklewis/johno-digital-garden-WIP-Gatsby-Theme-to-build-your-own-digital-garden-580aa3fd75bb4ca7899044e1e2d96fdd#94ef6372272a4d22be46fe643899a8fa
 
-  reading material 
+  ## Reading material 
 
 [https://twitter.com/websmyth/status/1291705254124363777?s=21](https://twitter.com/websmyth/status/1291705254124363777?s=21 "https://twitter.com/websmyth/status/1291705254124363777?s=21")
