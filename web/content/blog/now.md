@@ -4,9 +4,9 @@ slug: now
 date: 2020-08-06
 published: false
 featured: true
-summary: My current status in terms of work and other things
-section: now
-sub: now
+summary: My current status in terms of work and other things worth sharing ;-)
+section: updates
+sub: updates
 tags:
 - site
 - planning

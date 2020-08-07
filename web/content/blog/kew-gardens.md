@@ -4,7 +4,7 @@ slug: kew-gardens
 date: 2020-08-06
 published: false
 featured: true
-summary: Visit to Kew
+summary: We visited Kew Gardens on what was one of the hottest days we've experienced for a long time. All photos taken on my trusty iPhone.
 section: photography
 sub: gardens
 tags:
