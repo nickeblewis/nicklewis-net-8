@@ -49,11 +49,12 @@ export default {
     imgUrls() {
       console.log("number of images", this.num)
       const imgUrls = [];
+      let counter = this.start
       for (let i = 1; i <=this.num; i ++) {
-        const paddedNumber = ("00" + this.start).slice(-4);
+        const paddedNumber = ("00" + counter).slice(-4);
         console.log(`${process.env.GRIDSOME_IMGIX_URL}/${this.folder}/${this.prefix}_${paddedNumber}.jpeg`.replace(/([^:])(\/\/+)/g, '$1/'))
         imgUrls.push(`${process.env.GRIDSOME_IMGIX_URL}/${this.folder}/${this.prefix}_${paddedNumber}.jpeg`.replace(/([^:])(\/\/+)/g, '$1/'))
-        this.start++
+        counter++
       }
       return imgUrls;
     }

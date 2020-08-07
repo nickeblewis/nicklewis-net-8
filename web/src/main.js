@@ -5,6 +5,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
 import VueFuse from 'vue-fuse'
 import VueDisqus from 'vue-disqus'
+import VueMasonry from 'vue-masonry-css';
 
 // Import image url builder
 import urlForImage from './utils/urlForImage'
@@ -21,8 +22,9 @@ export default function (Vue, { router, head, isClient }) {
   })
 
   Vue.use(VueFuse)
+  Vue.use(VueMasonry)
   Vue.use(VueDisqus)
-  
+
 
   //Vue.use(VueFbCustomerChat, {
   //  page_id: 182108598496942, //  change 'null' to your Facebook Page ID,
