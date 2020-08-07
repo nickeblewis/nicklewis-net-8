@@ -14,9 +14,12 @@ tags:
 import CaptionedImage from '~/components/CaptionedImage.vue'
 import Divider from '~/components/Divider.vue'
 import ImageGallery from '~/components/ImageGallery.vue'
+import Carousel from '~/components/ImageGallery-carousel.vue'
 
 ## August 2020 Photos
 
-<image-gallery folder="/gardens/kew" prefix="IMG" :num="52"/>
+<image-gallery folder="/gardens/kew" prefix="IMG" :num="52" :start="1915" />
 
 Taken just a week after shielding people were allowed to return to sort-of-near-normality and on a very hot day where it hit 36 degrees. Later reports revealed that Kew gardens was the hottest place in the UK on this particular day.
+
+<Divider />

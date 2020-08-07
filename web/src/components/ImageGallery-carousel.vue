@@ -1,5 +1,6 @@
 <template>
   <div class="full-width px-4">
+    <p>Hello mate {{num}}</p>
     <div class="max-w-4xl mx-auto mb-8" >
       <ClientOnly>
         <carousel :images="imgUrls"/>
@@ -23,7 +24,11 @@ export default {
       type: String,
       default: ''
     },
-    numImages: {
+    start: {
+      type:Number,
+      default: 1
+    },
+    num: {
       type:Number,
       default: 0
     }
@@ -34,13 +39,14 @@ export default {
   computed: {
     maxNumCols() {
       // if only 2 images, always set maxcols to 2
-      return this.numImages % 2 === 0 ? 2 : 3;
+      return this.num % 2 === 0 ? 2 : 3;
     },
     imgUrls() {
       const imgUrls = [];
-      for (let i = 1; i <=this.numImages; i ++) {
-        const paddedNumber = ("00" + i).slice(-2);
-        imgUrls.push(`${process.env.GRIDSOME_IMGIX_URL}/${this.folder}/${this.prefix}-${paddedNumber}.jpg`.replace(/([^:])(\/\/+)/g, '$1/'))
+      for (let i = 1; i <=this.num; i ++) {
+        const paddedNumber = ("00" + this.start).slice(-4);
+        imgUrls.push(`${process.env.GRIDSOME_IMGIX_URL}/${this.folder}/${this.prefix}_${paddedNumber}.jpeg`.replace(/([^:])(\/\/+)/g, '$1/'))
+        this.start++
       }
       return imgUrls;
     }
