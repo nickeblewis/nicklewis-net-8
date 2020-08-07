@@ -10,7 +10,7 @@
               Walking Guides
           </h2>
           <p>
-            Curated guides with my selection of the most exciting new architecture in each of these cities.
+            Curated guides with my selection of the most interesting locations.
           </p>
         </div>
           <div class="w-full md:w-2/3 xl:w-full">

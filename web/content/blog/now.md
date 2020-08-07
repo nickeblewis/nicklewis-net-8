@@ -71,3 +71,5 @@ Here are some other things I've seen and read about that I will split out onto t
   ## Reading material
 
 [https://twitter.com/websmyth/status/1291705254124363777?s=21](https://twitter.com/websmyth/status/1291705254124363777?s=21 "https://twitter.com/websmyth/status/1291705254124363777?s=21")
+
+https://github.com/joelhooks/joelhooks-com/

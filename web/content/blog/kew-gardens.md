@@ -5,15 +5,18 @@ date: 2020-08-06
 published: false
 featured: true
 summary: Visit to Kew
-section: now
-sub: now
+section: photography
+sub: gardens
 tags:
 - gardens
 - photography
-
 ---
-## Kew Photos
+import CaptionedImage from '~/components/CaptionedImage.vue'
+import Divider from '~/components/Divider.vue'
+import ImageGallery from '~/components/ImageGallery.vue'
 
-![](/uploads/c9ab080f-7af0-4434-bb29-033242d2b340.jpeg)  
-![](/uploads/b3b7f014-4a8e-480e-872b-62ae31302e8b.jpeg)  
-It’s  August 2020 and the lockdown is easing
+## August 2020 Photos
+
+<image-gallery folder="/gardens/kew" prefix="IMG" :num="52"/>
+
+Taken just a week after shielding people were allowed to return to sort-of-near-normality and on a very hot day where it hit 36 degrees. Later reports revealed that Kew gardens was the hottest place in the UK on this particular day.

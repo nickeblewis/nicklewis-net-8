@@ -21,7 +21,7 @@
     "dotenv": "^8.1.0",
     "remark-toc": "^6.0.0",
     "get-youtube-id": "^1.0.1",
-    "gridsome": "^0.7.9",
+    "gridsome": "^0.7.19",
     "gridsome-plugin-remark-codesandbox": "^0.4.2",
     "gridsome-plugin-remark-shiki": "^0.3.0",
     "gridsome-plugin-rss": "^1.2.0",

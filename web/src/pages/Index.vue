@@ -37,7 +37,7 @@
       <div
         class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-8 relative"
       >
-        <h2 class="font-bold mb-6" id="projects">Recent Blog Posts:</h2>
+        <h2 class="font-bold mb-6" id="projects">Recent Posts:</h2>
 
         <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
           <svg width="170px" height="170px">
@@ -52,6 +52,31 @@
               <g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link>
             </div>
             <div class="text-lg text-gray-600">{{ post.node.summary }}</div>
+          </li>
+        </ul>
+      </div>
+      <!-- end projects -->
+    </div>
+
+    <div class="overflow-x-hidden">
+      <div
+        class="projects container-inner mx-auto text-xl border-gray-500 border-b py-16 mb-8 relative"
+      >
+        <h2 class="font-bold mb-6" id="projects">Featured Posts:</h2>
+
+        <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
+          <svg width="170px" height="170px">
+            <use xlink:href="#dots-triangle" />
+          </svg>
+        </div>
+
+        <ul class="text-lg sm:text-xl">
+          <li v-for="feature in $page.features.edges" :key="feature.id" class="checkmark mb-6">
+            <div>
+              {{ feature.node.section }} -
+              <g-link :to="feature.node.path" class="text-copy-primary">{{ feature.node.title }}</g-link>
+            </div>
+            <div class="text-lg text-gray-600">{{ feature.node.summary }}</div>
           </li>
         </ul>
       </div>
@@ -258,6 +283,20 @@ query HomePosts {
     }
   }
   posts: allPost (limit: 4, sortBy: "date", order: DESC, filter: { published: { eq: true }}) {
+    edges {
+      node {
+        id
+        title
+        published
+        section
+        date (format: "MMMM D, Y")
+        summary
+
+        path
+      }
+    }
+  }
+  features: allPost (limit: 4, sortBy: "date", order: DESC, filter: { featured: { eq: true }}) {
     edges {
       node {
         id

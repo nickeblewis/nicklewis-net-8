@@ -1,18 +1,18 @@
 ---
-title: "Architect’s Layover: one day in Abu Dhabi"
+title: "Farnborough Heritage - A Photo Walk"
 date: 2017-03-12
 published: true
-excerpt: I recently had an extended layover in Abu Dhabi and went out to explore the city's must-see new architecture.
-description: I recently had an extended layover in Abu Dhabi and went out to explore the city's must-see new architecture.
+excerpt: I am soon putting together a series of photowalks
+description: I am hoping to run a series of photo-walks next month as part of the heritage season across Rushmoor, so here is a guide you can follow any time or tag along with us in September
 tags:
-  - Abu Dhabi
-  - City Guide
-  - UAE
-  - Layover
-city: Abu Dhabi
+  - Farnborough
+  - Town Guide
+  - Heritage
+  - Hampshire
+city: Farnborough
 pinterestMedia: ./_imgs/TFA-AbuDhabi-Architecture-Guide.png
 chapter: 0
-coverImage: ./_imgs/cover.jpg
+coverImage: ./_imgs/449F0DAC-A873-4F57-B86F-CED97648D5C9_1_105_c.jpeg
 ---
 import GuideMap from '~/components/GuideMap.vue'
 import CaptionedImage from '~/components/CaptionedImage.vue'
@@ -21,21 +21,22 @@ import ImageGallery from '~/components/ImageGallery.vue'
 import VideoPlayer from '~/components/VideoPlayer.vue'
 import BackToTop from '~/components/BackToTop.vue'
 
-I recently had an extended layover in **Abu Dhabi** and went out to explore the city's must-see new buildings. Regarding contemporary architecture, Abu Dhabi shines less bright than its bigger sister Dubai, having less iconic pieces and areas. This scenario is slowly changing, however: the city is in frantic construction, with several high-profile projects to be finished in the next years.
-
-To explore Abu Dhabi. I decided again to take the [Big Bus Tour](https://www.bigbustours.com/en/abu-dhabi/abu-dhabi-bus-tours/), which proved quite a pleasant surprise during my visit to Dubai last year. But that turned out to be not so interesting in Abu Dhabi. My first stop was to be **Masdar City**, which opens from 8:30 am. The first buses start to operate quite late at 10 am, so instead of sitting at the hotel waiting for the first bus which would take me to my first stop, I just hopped in a taxi, and 15 minutes later I was there.
+TODO - Write an introduction the Heritage Quarter of Farnborough...
 
 ### Map
 
-Check also the **Architectural Map of Abu Dhabi** on Google Maps:
+You can easily follow our heritage trail with the aid of Google Maps:
 
-<guide-map title="Architecture Map of Abu Dhabi" map="https://www.google.com/maps/d/u/1/embed?mid=1GgHEApxhHbHwIj93FmNCl3QT1Mo"/>
+<guide-map title="Architecture Map of Abu Dhabi" map="https://www.google.com/maps/d/u/1/embed?mid=1o7L7ZBcRjXavCVo2iO6EoDS_WwE"/>
 
 ### Buildings
 
 toc
 
-## Capital Gate Tower / RMJM Architects
+Wind Tunnels
+TODO - write up rest of this list
+
+## The Balloon Hangar
 
 <captioned-image alt="Capital Gate Tower by RMJM Architects" caption="Capital Gate Tower by RMJM Architects" imgFile="/guides/abu-dhabi/rmjm-capital-gate-tower.jpg" format="v"/>
 
