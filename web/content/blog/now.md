@@ -30,6 +30,7 @@ Currently working part-time for a digital agency and filling the rest of the tim
 - Substack and Nick Lewis or convertkit
 - https://www.taniarascia.com/
 - https://www.patreon.com/taniarascia - Hmmm Patreon and Tania is making 500 dollars from it a month
+- https://www.taniarascia.com/adding-comments-to-my-blog/
 
 ### Digital Gardens
 - https://stackingthebricks.com/how-blogs-broke-the-web/
