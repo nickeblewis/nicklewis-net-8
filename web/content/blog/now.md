@@ -16,6 +16,8 @@ tags:
 
 Currently working part-time for a digital agency and filling the rest of the time with projects of my own such as my ongoing course writing and other things. So please contact me if you need me for projects.
 
+My website nicklewis.net is to become what is known as a Digital Garden, so will be less blog and more like a Wiki. essentially less diary and more documentary. 
+
 ## What I am looking at for this site
 
 * https://convertkit.com/?lmref=Zp1z7w as seen on Joel Hooks website
