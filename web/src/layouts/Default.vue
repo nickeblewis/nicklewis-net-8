@@ -21,7 +21,7 @@
           <li class="mr-8 mb-6 lg:mb-0">
             <theme-switcher :theme="theme" @themeChanged="updateTheme" />
           </li>
-          
+
           <li class="mr-8 mb-6 lg:mb-0">
             <a v-if="$route.path === '/'" href="/#about" v-scroll-to="'#about'" class="text-copy-primary hover:text-gray-600">About</a>
             <g-link v-else to="/#about" class="text-copy-primary hover:text-gray-600">About</g-link>
@@ -39,7 +39,7 @@
 
     <div class="flex-grow">
       <slot/>
-      
+
     </div>
     <footer class="bg-green-700 text-white">
       <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
@@ -150,7 +150,7 @@ export default {
     ThemeSwitcher
   },
   mounted() {
-    this.theme = localStorage.getItem('theme') || 'theme-light'
+    this.theme = localStorage.getItem('theme') || 'theme-dark'
   },
   data() {
     return {
