@@ -31,6 +31,18 @@ module.exports = {
   },
   plugins: [
     {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        config: {
+          '/blog/*': {
+            changefreq: 'weekly',
+            priority: 0.5,
+            lastmod: '2020-08-10'
+          }
+        }
+      }
+    },
+    {
       use: 'gridsome-source-sanity',
       options: {
         ...clientConfig.sanity,
