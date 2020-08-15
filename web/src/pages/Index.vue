@@ -37,7 +37,7 @@
       <div
         class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-8 relative"
       >
-        <h2 class="font-bold mb-6" id="projects">Recent Posts:</h2>
+        <h2 class="font-bold mb-6" id="projects">Recent Posts</h2>
 
         <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
           <svg width="170px" height="170px">
@@ -62,7 +62,7 @@
       <div
         class="projects container-inner mx-auto text-xl border-gray-500 border-b py-16 mb-8 relative"
       >
-        <h2 class="font-bold mb-6" id="projects">Featured Posts:</h2>
+        <h2 class="font-bold mb-6" id="projects">Featured Posts</h2>
 
         <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
           <svg width="170px" height="170px">
@@ -89,7 +89,7 @@
       <div
         class="projects container-inner mx-auto text-xl py-16 mb-8 relative"
       >
-        <h2 class="font-bold mb-6" id="projects">Recent Images:</h2>
+        <h2 class="font-bold mb-6" id="projects">Photography</h2>
 
         <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
           <svg width="170px" height="170px">
