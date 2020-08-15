@@ -16,5 +16,8 @@
   "devDependencies": {
     "@sanity/cli": "^0.144.0",
     "lerna": "^3.16.4"
+  },
+  "dependencies": {
+    "vue-cool-lightbox": "^2.4.1"
   }
 }

@@ -6,6 +6,8 @@ import VueScrollTo from 'vue-scrollto'
 import VueFuse from 'vue-fuse'
 import VueDisqus from 'vue-disqus'
 import VueMasonry from 'vue-masonry-css';
+import CoolLightBox from 'vue-cool-lightbox'
+import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
 
 // Import image url builder
 import urlForImage from './utils/urlForImage'
@@ -24,6 +26,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.use(VueFuse)
   Vue.use(VueMasonry)
   Vue.use(VueDisqus)
+  Vue.use(CoolLightBox)
 
 
   //Vue.use(VueFbCustomerChat, {

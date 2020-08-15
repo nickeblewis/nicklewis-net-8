@@ -1,47 +1,48 @@
 <template>
   <Layout>
-    <!-- TODO- Need to include the cover image in a similar way to how I did it on nicklewis.online -->
-    <div class="container-inner mx-auto my-16">
-      <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
-      <div class="text-xl text-gray-600 mb-4">{{ $page.post.publishedAt }}</div>
-      <div class="flex mb-8 text-sm">
-        <g-link
-          :to="tag"
-          v-for="tag in $page.post.tags"
-          :key="tag.id"
-          class="bg-gray-300 rounded-full px-4 py-2 mr-4 hover:bg-green-300"
-        >{{ tag }}</g-link>
-      </div>
-      <div class="markdown-body mb-8">
-        <masonry
-          :cols="{default: 2, 1000: 3, 700: 1}"
-          :gutter="{default: '30px', 700: '15px'}"
-        >
-          <div
-            v-for="image in $page.post.images"
-            :key="image.id"
-            class="m-3 rounded-lg shadow-lg overflow-hidden"
-          >
-          
-            <g-image
-              alt="Cover image"
-              class="justify-center"
-              :src="$urlForImage(image, $page.metadata.sanityOptions).width(400).quality(90).url()"
-            />
-          </div>
-        </masonry>
+    <div id="coolboxapp">
+      <!-- TODO- Need to include the cover image in a similar way to how I did it on nicklewis.online -->
+      <div class="container-inner mx-auto my-16">
+        <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
+        <div class="text-xl text-gray-600 mb-4">{{ $page.post.publishedAt }}</div>
+        <div class="flex mb-8 text-sm">
+          <g-link
+            :to="tag"
+            v-for="tag in $page.post.tags"
+            :key="tag.id"
+            class="bg-gray-300 rounded-full px-4 py-2 mr-4 hover:bg-green-300"
+          >{{ tag }}</g-link>
+        </div>
+        <div class="markdown-body mb-8">
+          <masonry :cols="{default: 2, 1000: 3, 700: 1}" :gutter="{default: '30px', 700: '15px'}">
+            <div
+              v-for="(image, imageIndex) in items"
+              :key="imageIndex"
+              @click="setIndex(imageIndex)"
+              class="m-3 rounded-lg shadow-lg overflow-hidden"
+            >
+              <g-image
+                alt="Cover image"
+                class="justify-center"
+                :src="image.src"
+              />
+            </div>
+          </masonry>
 
-        <block-content
-          class="post__content"
-          :blocks="$page.post._rawBody"
-          v-if="$page.post._rawBody"
-        />
+          <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
+
+          <block-content
+            class="post__content"
+            :blocks="$page.post._rawBody"
+            v-if="$page.post._rawBody"
+          />
+        </div>
+        <div class="mb-8">
+          <g-link to="/articles" class="font-bold uppercase">Back to Index</g-link>
+        </div>
+        <Bio />
+        <vue-disqus shortname="nicklewis-net" :identifier="$page.post.title"></vue-disqus>
       </div>
-      <div class="mb-8">
-        <g-link to="/articles" class="font-bold uppercase">Back to Index</g-link>
-      </div>            
-      <Bio />
-       <vue-disqus shortname="nicklewis-net" :identifier="$page.post.title"></vue-disqus>
     </div>
   </Layout>
 </template>
@@ -65,8 +66,8 @@ query Post ($id: ID!) {
         _id
         url
       }
-      
-    
+
+
       hotspot {
         x
         y
@@ -109,30 +110,72 @@ import Vue from 'vue'
 import BlockContent from '~/components/BlockContent'
 import Bio from '../components/Bio'
 import VueMasonry from 'vue-masonry-css'
+//import VueSilentbox from 'vue-silentbox'
+// import CoolLightBox from 'vue-cool-lightbox'
+// import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
+
 Vue.use(VueMasonry)
+//Vue.use(VueSilentbox)
 
 export default {
+  name: 'coolboxapp',
   components: {
     BlockContent,
     Bio,
-    VueMasonry
+    VueMasonry,
+  },
+  data: function () {
+    return {
+      index: null,
+      items: []
+    }
+  },
+  methods: {
+    setIndex(index) {
+      this.index = index
+    },
+  },
+  convert(data) {
+    //console.log(data)
+  },
+  created() {
+    let nick = JSON.parse(JSON.stringify(this.$page.post))
+
+    nick.images.forEach(element => {
+      this.items.push({ src: element.asset.url, description: '', alt: '', thumbnailWidth: '220px'})
+    })
+
+    //console.log(nick.images)
+
+
   },
   metaInfo() {
     return {
       title: this.$page.post.title,
       meta: [
-        { key: "twitter:title",name: "twitter:title", content: this.$page.post.title },
-        { key: "og:title",name: "og:title", content: this.$page.post.title },
+        { key: 'twitter:title', name: 'twitter:title', content: this.$page.post.title },
+        { key: 'og:title', name: 'og:title', content: this.$page.post.title },
       ],
-      script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
+      script: [{ src: 'https://platform.twitter.com/widgets.js', async: true }],
     }
-  }
+  },
 }
 </script>
 
 <style>
 /* TODO cpmpare with Post.vue which links to CSS file this seems wasteful */
 /* Modified version of: https://github.com/sindresorhus/github-markdown-css */
+
+.images-wrapper {
+  display: flex;
+  height: 100000px;
+}
+.image {
+  height: 300px;
+  width: 300px;
+  display: block;
+  background-color: red;
+}
 
 .markdown-body .octicon {
   display: inline-block;
@@ -1075,5 +1118,18 @@ export default {
 
 .markdown-body .pl-12 {
   padding-left: 128px !important;
+}
+
+.silentbox-item {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.silentbox-item {
+  max-height: 145px;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  overflow: hidden;
 }
 </style>
