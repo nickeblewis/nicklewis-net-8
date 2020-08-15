@@ -81,7 +81,7 @@ Some stuff I've seen on Leapers recently that sounds interesting...
 * https://github.com/johno/digital-garden
 * https://www.notion.so/nicklewis/johno-digital-garden-WIP-Gatsby-Theme-to-build-your-own-digital-garden-580aa3fd75bb4ca7899044e1e2d96fdd#94ef6372272a4d22be46fe643899a8fa
 
-  ## Reading material
+## Reading material
 
 [https://twitter.com/websmyth/status/1291705254124363777?s=21](https://twitter.com/websmyth/status/1291705254124363777?s=21 "https://twitter.com/websmyth/status/1291705254124363777?s=21")
 
@@ -97,3 +97,4 @@ https://moderncss.dev/
 https://www.visit-hampshire.co.uk/things-to-do/st-huberts-church-p56023
 https://blosslynspage.wordpress.com/2017/09/13/st-leonards-church-bursledon-hampshire/
 Portchester Castle
+Gypsy Church (visited last night) and wish to contact the person listed on the sign, who will let us take a look inside
