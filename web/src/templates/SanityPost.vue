@@ -14,17 +14,17 @@
           >{{ tag }}</g-link>
         </div>
         <div class="markdown-body mb-8">
-          <masonry :cols="{default: 2, 1000: 3, 700: 1}" :gutter="{default: '30px', 700: '15px'}">
+          <masonry :cols="{default: 2, 1024: 2, 760: 2, 640: 2, 375: 1}" :gutter="0">
             <div
               v-for="(image, imageIndex) in items"
               :key="imageIndex"
               @click="setIndex(imageIndex)"
-              class="m-3 rounded-lg shadow-lg overflow-hidden"
+              class="py-1 sm:px-1"
             >
               <g-image
                 alt="Cover image"
-                class="justify-center"
-                :src="image.src"
+                class="border-2 border-black"
+                :src="`${image.src}?w=600`"
               />
             </div>
           </masonry>

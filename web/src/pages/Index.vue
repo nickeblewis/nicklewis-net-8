@@ -98,20 +98,20 @@
         </div>
 
         <masonry
-          :cols="{default: 2, 1000: 3, 700: 1}"
-          :gutter="{default: '30px', 700: '15px'}"
-        >
+            :cols="{default: 2, 1024: 2,  768: 2, 640: 2, 375: 1}"
+            :gutter="0"
+          >
           <div
             v-for="photo in $page.photos.edges"
             :key="photo.id"
-            class="m-3 rounded-lg shadow-lg overflow-hidden"
+            class="py-1 sm:px-1"
           >
             <g-link :to="photo.node.slug.current">
               <g-image
                 v-if="photo.node.mainImage"
                 alt="Cover image"
-                class="justify-center"
-                :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).format('jpg').width(400).quality(90).url()"
+                class="border-2 border-black"
+                :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).format('jpg').width(800).quality(90).url()"
               />
             </g-link>
           </div>
