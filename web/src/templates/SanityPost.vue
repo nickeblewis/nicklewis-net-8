@@ -2,7 +2,7 @@
   <Layout>
     <div id="coolboxapp">
       <!-- TODO- Need to include the cover image in a similar way to how I did it on nicklewis.online -->
-      <div class="container-inner mx-auto my-16">
+      <div class="container mx-auto my-16">
         <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
         <div class="text-xl text-gray-600 mb-4">{{ $page.post.publishedAt }}</div>
         <div class="flex mb-8 text-sm">
@@ -14,7 +14,7 @@
           >{{ tag }}</g-link>
         </div>
         <div class="markdown-body mb-8">
-          <masonry :cols="{default: 2, 1024: 2, 760: 2, 640: 2, 375: 1}" :gutter="0">
+          <masonry :cols="{default: 2, 1024: 2, 760: 2, 640: 1, 375: 1}" :gutter="0">
             <div
               v-for="(image, imageIndex) in items"
               :key="imageIndex"
