@@ -1,9 +1,11 @@
 <template>
   <Layout>
-    <div class="container-inner mx-auto my-16">
+    <div class="py-1 bg-white overflow-hidden">
+      <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
+    <div class="container mx-auto">
       <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
       <div class="text-xl text-gray-600 mb-4">{{ $page.post.date }}</div>
-      
+
       <VueRemarkContent class="markdown-body mb-8"/>
       <div class="mb-8">
         <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
@@ -20,9 +22,11 @@
               value="submit"
               class="block bg-green-700 hover:bg-green-800 text-white text-sm font-semibold tracking-wide uppercase shadow rounded cursor-pointer px-6 py-3"
             >Submit</button>
-          </div>          
-        </div>        
-      </div>     
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
     </div>
   </Layout>
 </template>

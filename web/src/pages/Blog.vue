@@ -1,29 +1,40 @@
 <template>
   <Layout>
-    <div class="container mx-auto py-16">
-      <div v-for="post in $page.posts.edges" :key="post.id" class="post border-gray-400 border-b mb-12">
-        <h2 class="text-3xl font-bold"><g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link></h2>
-        <div class="text-copy-secondary mb-4">
-          <span>{{ post.node.date }}</span>
-          <span> &middot; </span>
-          <span>{{ post.node.section }}</span>
-        </div>
+    <div class="py-1 bg-white overflow-hidden">
+      <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
+        <div
+          class="projects container mx-auto text-xl border-t border-gray-500 border-b py-16 mb-8 relative"
+        >
+          <div
+            v-for="post in $page.posts.edges"
+            :key="post.id"
+            class="post border-gray-400 border-b mb-12"
+          >
+            <h2 class="text-3xl font-bold">
+              <g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link>
+            </h2>
+            <div class="text-copy-secondary mb-4">
+              <span>{{ post.node.date }}</span>
+              <span>&middot;</span>
+              <span>{{ post.node.section }}</span>
+            </div>
 
-        <div class="text-lg mb-4">
-          {{ post.node.summary }}
-        </div>
+            <div class="text-lg mb-4">{{ post.node.summary }}</div>
 
-        <div class="mb-8">
-          <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
-        </div>
-      </div> <!-- end post -->
+            <div class="mb-8">
+              <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
+            </div>
+          </div>
+          <!-- end post -->
 
-      <pagination-posts
-        v-if="$page.posts.pageInfo.totalPages > 1"
-        base="/blog"
-        :totalPages="$page.posts.pageInfo.totalPages"
-        :currentPage="$page.posts.pageInfo.currentPage"
-      />
+          <pagination-posts
+            v-if="$page.posts.pageInfo.totalPages > 1"
+            base="/blog"
+            :totalPages="$page.posts.pageInfo.totalPages"
+            :currentPage="$page.posts.pageInfo.currentPage"
+          />
+        </div>
+      </div>
     </div>
   </Layout>
 </template>
@@ -55,11 +66,11 @@ import PaginationPosts from '../components/PaginationPosts'
 
 export default {
   metaInfo: {
-    title: 'Nick Lewis - Blog'
+    title: 'Nick Lewis - Blog',
   },
   components: {
-    PaginationPosts
-  }
+    PaginationPosts,
+  },
 }
 </script>
 

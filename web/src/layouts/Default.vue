@@ -40,13 +40,7 @@
             <g-link v-else to="/#about" class="inline-block text-xl text-red-700">Nick Lewis Digital</g-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <a
-              v-if="$route.path === '/'"
-              href="/articles"
-              v-scroll-to="'#about'"
-              class="text-copy-primary hover:text-gray-600"
-            >Articles</a>
-            <g-link v-else to="/articles" class="text-copy-primary hover:text-gray-600">Articles</g-link>
+            <g-link to="/articles" class="text-copy-primary hover:text-gray-600">Articles</g-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
             <a

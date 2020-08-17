@@ -46,14 +46,14 @@
         </div>
 
         <div class="border-b border-gray-200 py-8 lg:w-4/5 w-full">
-          <masonry :cols="{default: 2, 1024: 2,  768: 2, 640: 2, 375: 1}" :gutter="0">
+          <masonry :cols="{default: 2, 1024: 2,  768: 2, 640: 1, 375: 1}" :gutter="0">
             <div v-for="photo in $page.photos.edges" :key="photo.id" class="py-1 sm:px-1">
               <g-link :to="photo.node.slug.current">
                 <g-image
                   v-if="photo.node.mainImage"
                   alt="Cover image"
                   class="border-2 border-black"
-                  :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).format('jpg').width(800).quality(90).url()"
+                  :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).format('jpg').width(200).quality(90).url()"
                 />
               </g-link>
             </div>

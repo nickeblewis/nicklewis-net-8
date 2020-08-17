@@ -1,8 +1,10 @@
 <template>
   <Layout>
     <div id="coolboxapp">
+      <div class="py-1 bg-white overflow-hidden">
+      <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
       <!-- TODO- Need to include the cover image in a similar way to how I did it on nicklewis.online -->
-      <div class="container mx-auto my-16">
+      <div class="container mx-auto">
         <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
         <div class="text-xl text-gray-600 mb-4">{{ $page.post.publishedAt }}</div>
         <div class="flex mb-8 text-sm">
@@ -32,7 +34,7 @@
           <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
 
           <block-content
-            class="post__content"
+            class="post-content"
             :blocks="$page.post._rawBody"
             v-if="$page.post._rawBody"
           />
@@ -43,7 +45,7 @@
         <Bio />
         <vue-disqus shortname="nicklewis-net" :identifier="$page.post.title"></vue-disqus>
       </div>
-    </div>
+    </div></div></div>
   </Layout>
 </template>
 
@@ -165,6 +167,11 @@ export default {
 <style>
 /* TODO cpmpare with Post.vue which links to CSS file this seems wasteful */
 /* Modified version of: https://github.com/sindresorhus/github-markdown-css */
+
+.post-content {
+  /* max-width: 650px; */
+  font-size: 1.35rem;
+}
 
 .images-wrapper {
   display: flex;
