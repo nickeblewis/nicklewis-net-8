@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="min-h-screen bg-white" :class="theme">
+  <div id="app" class="min-h-screen bg-white border-t-14 border-green-700" :class="theme">
     <!-- <header class="border-t-14 border-green-700"> -->
     <div class="container mx-auto">
 
@@ -57,9 +57,9 @@
           <li class="mr-8 mb-6 lg:mb-0">
             <search-input />
           </li>
-          <li class="mr-8 mb-6 lg:mb-0">
+          <!-- <li class="mr-8 mb-6 lg:mb-0">
             <theme-switcher :theme="theme" @themeChanged="updateTheme" />
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
