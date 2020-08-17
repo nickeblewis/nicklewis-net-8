@@ -7,7 +7,7 @@
       </div>
 
 
-    </div> -->
+    </div>-->
     <!-- end hero -->
 
     <div class="container mx-auto">
@@ -33,35 +33,38 @@
         <div class="flex flex-wrap">
           <main class="w-full lg:w-3/4">
             <div class="overflow-x-hidden">
-      <div class="projects container mx-auto text-xl mb-8 relative">
-        <h2
-          class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:leading-9"
-          id="projects"
-        >Photography</h2>
+              <div class="projects container mx-auto text-xl mb-8 relative">
+                <h2
+                  class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:leading-9"
+                  id="projects"
+                >Photography</h2>
 
-        <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
-          <svg width="170px" height="170px">
-            <use xlink:href="#dots-triangle" />
-          </svg>
-        </div>
+                <div
+                  class="absolute right-0"
+                  style="top: 50px; transform: translate(100%) rotate(180deg)"
+                >
+                  <svg width="170px" height="170px">
+                    <use xlink:href="#dots-triangle" />
+                  </svg>
+                </div>
 
-        <div class="border-b border-gray-200 py-8 lg:w-4/5 w-full">
-          <masonry :cols="{default: 2, 1024: 2,  768: 2, 640: 1, 375: 1}" :gutter="0">
-            <div v-for="photo in $page.photos.edges" :key="photo.id" class="py-1 sm:px-1">
-              <g-link :to="photo.node.slug.current">
-                <g-image
-                  v-if="photo.node.mainImage"
-                  alt="Cover image"
-                  class="border-2 border-black"
-                  :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).format('jpg').width(200).quality(90).url()"
-                />
-              </g-link>
+                <div class="border-b border-gray-200 py-8 lg:w-4/5 w-full">
+                  <masonry :cols="{default: 2, 1024: 2,  768: 2, 640: 1, 375: 1}" :gutter="0">
+                    <div v-for="photo in $page.photos.edges" :key="photo.id" class="py-1 sm:px-1">
+                      <g-link :to="photo.node.slug.current">
+                        <g-image
+                          v-if="photo.node.mainImage"
+                          alt="Cover image"
+                          class="border-2 border-black"
+                          :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).format('jpg').width(200).quality(90).url()"
+                        />
+                      </g-link>
+                    </div>
+                  </masonry>
+                </div>
+              </div>
+              <!-- end photos -->
             </div>
-          </masonry>
-        </div>
-      </div>
-      <!-- end photos -->
-    </div>
             <div class="overflow-x-hidden">
               <div
                 class="projects container mx-auto text-xl border-t border-gray-500 border-b py-16 mb-8 relative"
@@ -173,9 +176,11 @@
                   />
                 </div>
                 <div class="text-3xl font-bold w-full sm:w-3/5 text-align-center sm:text-left">
-        <div class="leading-tight">Nick Lewis</div>
-        <div class="text-green-700 leading-tight">Freelance Developer, Photographer &amp; Writer</div>
-      </div>
+                  <div class="leading-tight">Nick Lewis</div>
+                  <div
+                    class="text-green-700 leading-tight"
+                  >Freelance Developer, Photographer &amp; Writer</div>
+                </div>
                 <p
                   class="mb-2 mt-6 text-lg border-b border-gray-200 pb-6"
                 >I have 25 years experience in the software industry. I am a highly experienced front-end web developer who specialises in VueJS/Gridsome at the current point in time. I am setting out to write about my experience through this website and hope that my blog posts and documentation can help you in some way, whether you are trying to get your head around the latest tech or are seeking the kind of consultancy services I offer on a freelance basis.</p>
@@ -231,7 +236,6 @@
     <!-- TODO - Codeschool articles go in here. Will also need a link in the nav and a separate series of pages for it -->
     <!-- Where will the A to Z stuff go? -->
 
-
     <!-- <div class="overflow-x-hidden border-gray-200 border-b">
       <div class="get-to-know-me container-inner mx-auto text-xl pb-16 relative">
         <h2 class="font-bold mb-6" id="about">Get to know me:</h2>
@@ -256,7 +260,7 @@
         </div>
       </div>
 
-    </div> -->
+    </div>-->
 
     <div class="overflow-x-hidden">
       <div class="contact-me bg-background-secondary pt-16">
