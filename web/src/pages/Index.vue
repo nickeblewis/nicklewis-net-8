@@ -34,10 +34,10 @@
           <main class="w-full lg:w-3/4">
             <div class="overflow-x-hidden">
               <div class="projects container mx-auto text-xl mb-8 relative">
-                <h2
+<h1
                   class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:leading-9"
                   id="projects"
-                >Through the lens</h2>
+                >Through the lens</h1>
                 <div class="text-lg text-gray-600">Latest photographic articles from around the South of England, covering natural landscapes, interesting buildings and a collection of photo journals...</div>
                 <div
                   class="absolute right-0"
@@ -65,7 +65,7 @@
               </div>
               <!-- end photos -->
             </div>
-            <div class="overflow-x-hidden">
+            <!-- <div class="overflow-x-hidden">
               <div class="projects container mx-auto text-xl mb-8 relative">
                 <h1
                   class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:leading-9"
@@ -101,14 +101,14 @@
                   </article>
                 </div>
               </div>
-              <!-- end projects -->
-            </div>
+
+            </div> -->
             <div class="overflow-x-hidden">
               <div class="projects container mx-auto text-xl mb-8 relative">
                 <h1
                   class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:leading-9"
                   id="projects"
-                >Recent Posts</h1>
+                >Latest Posts</h1>
 
                 <div
                   class="absolute right-0"
@@ -478,7 +478,7 @@ query HomePosts {
       }
     }
   }
-  features: allPost (limit: 4, sortBy: "date", order: DESC, filter: { featured: { eq: true }}) {
+  features: allPost (limit: 4, sortBy: "date", order: DESC, filter: { published: { eq: true }, featured: { eq: true }}) {
     edges {
       node {
         id

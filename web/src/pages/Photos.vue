@@ -46,7 +46,7 @@
             <block-content class="text-lg mb-4" :blocks="post.node._rawExcerpt" />
 
             <!-- <div class="mb-8">
-              <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
+              <g-link :to="post.node.path" class="font-bold uppercase">Full Gallery...</g-link>
             </div> -->
             <!-- <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">{{ post.node.title }}</div>
@@ -65,7 +65,7 @@
           <div class="px-6 py-4">
             <pagination-posts
               v-if="$page.posts.pageInfo.totalPages > 1"
-              base="/articles"
+              base="/photos"
               :totalPages="$page.posts.pageInfo.totalPages"
               :currentPage="$page.posts.pageInfo.currentPage"
             />
