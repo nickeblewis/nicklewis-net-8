@@ -119,7 +119,7 @@
                   </svg>
                 </div>
 
-                <div class="text-lg sm:text-xl py-8 lg:w-4/5 w-full">
+                <div class="text-lg sm:text-xl lg:w-4/5 w-full">
                   <article
                     v-for="post in $page.posts.edges"
                     :key="post.id"
