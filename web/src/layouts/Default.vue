@@ -108,9 +108,9 @@
           <li class="mr-8 mb-6 lg:mb-0">
             <search-input />
           </li>
-          <!-- <li class="mr-8 mb-6 lg:mb-0">
+          <li class="mr-8 mb-6 lg:mb-0">
             <theme-switcher :theme="theme" @themeChanged="updateTheme" />
-          </li> -->
+          </li>
         </ul>
       </div>
     </div>
