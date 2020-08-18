@@ -39,9 +39,9 @@
             v-if="$page.post._rawBody"
           />
         </div>
-        <div class="mb-8">
-          <g-link to="/articles" class="font-bold uppercase">Back to Index</g-link>
-        </div>
+        <!-- <div class="mb-8">
+          <g-link to="/photos" class="font-bold uppercase">Back</g-link>
+        </div> -->
         <Bio />
         <vue-disqus shortname="nicklewis-net" :identifier="$page.post.title"></vue-disqus>
       </div>

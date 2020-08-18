@@ -37,8 +37,8 @@
                 <h2
                   class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:leading-9"
                   id="projects"
-                >Photography</h2>
-
+                >Through the lens</h2>
+                <div class="text-lg text-gray-600">Latest photographic articles from around the South of England, covering natural landscapes, interesting buildings and a collection of photo journals...</div>
                 <div
                   class="absolute right-0"
                   style="top: 50px; transform: translate(100%) rotate(180deg)"
@@ -48,15 +48,15 @@
                   </svg>
                 </div>
 
-                <div class="border-b border-gray-200 py-8 lg:w-4/5 w-full">
-                  <masonry :cols="{default: 2, 1024: 2,  768: 2, 640: 1, 375: 1}" :gutter="0">
+                <div class="border-b border-gray-200 lg:w-4/5 w-full">
+                  <masonry :cols="{default: 4, 1024: 4,  768: 2, 640: 1, 375: 1}" :gutter="0">
                     <div v-for="photo in $page.photos.edges" :key="photo.id" class="py-1 sm:px-1">
                       <g-link :to="photo.node.slug.current">
                         <g-image
                           v-if="photo.node.mainImage"
                           alt="Cover image"
                           class="border-2 border-black"
-                          :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).format('jpg').width(200).quality(90).url()"
+                          :src="$urlForImage(photo.node.mainImage, $page.metadata.sanityOptions).format('jpg').width(800).quality(60).url()"
                         />
                       </g-link>
                     </div>
@@ -66,40 +66,7 @@
               <!-- end photos -->
             </div>
             <div class="overflow-x-hidden">
-              <div
-                class="projects container mx-auto text-xl border-t border-gray-500 border-b py-16 mb-8 relative"
-              >
-                <h1
-                  class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:leading-9"
-                  id="projects"
-                >Recent Posts</h1>
-
-                <div
-                  class="absolute right-0"
-                  style="top: 50px; transform: translate(100%) rotate(180deg)"
-                >
-                  <svg width="170px" height="170px">
-                    <use xlink:href="#dots-triangle" />
-                  </svg>
-                </div>
-
-                <ul class="text-lg sm:text-xl border-b border-gray-200 py-8 lg:w-4/5 w-full">
-                  <li v-for="post in $page.posts.edges" :key="post.id" class="checkmark mb-6">
-                    <div>
-                      {{ post.node.section }} -
-                      <g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link>
-                    </div>
-                    <div class="text-lg text-gray-600">{{ post.node.summary }}</div>
-                  </li>
-                </ul>
-              </div>
-              <!-- end projects -->
-            </div>
-
-            <div class="overflow-x-hidden">
-              <div
-                class="projects container mx-auto text-xl border-gray-500 border-b py-16 mb-8 relative"
-              >
+              <div class="projects container mx-auto text-xl mb-8 relative">
                 <h1
                   class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:leading-9"
                   id="projects"
@@ -114,22 +81,60 @@
                   </svg>
                 </div>
 
-                <ul class="text-lg sm:text-xl border-b border-gray-200 py-8 lg:w-4/5 w-full">
-                  <li
+                <div class="text-lg sm:text-xl lg:w-4/5 w-full">
+                  <article
                     v-for="feature in $page.features.edges"
                     :key="feature.id"
-                    class="checkmark mb-6"
+                    class="border-b border-gray-200 py-8 lg:w-4/5 w-full"
                   >
-                    <div>
-                      {{ feature.node.section }} -
+                    <time
+                      :datetime="feature.node.date"
+                      class="text-green-700 uppercase font-semibold text-md tracking-wider opacity-75"
+                    >{{feature.node.date}}</time>
+                    <h2>
                       <g-link
                         :to="feature.node.path"
-                        class="text-copy-primary"
+                        class="text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
                       >{{ feature.node.title }}</g-link>
-                    </div>
+                    </h2>
                     <div class="text-lg text-gray-600">{{ feature.node.summary }}</div>
-                  </li>
-                </ul>
+                  </article>
+                </div>
+              </div>
+              <!-- end projects -->
+            </div>
+            <div class="overflow-x-hidden">
+              <div class="projects container mx-auto text-xl mb-8 relative">
+                <h1
+                  class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:leading-9"
+                  id="projects"
+                >Recent Posts</h1>
+
+                <div
+                  class="absolute right-0"
+                  style="top: 50px; transform: translate(100%) rotate(180deg)"
+                >
+                  <svg width="170px" height="170px">
+                    <use xlink:href="#dots-triangle" />
+                  </svg>
+                </div>
+
+                <div class="text-lg sm:text-xl py-8 lg:w-4/5 w-full">
+                  <article
+                    v-for="post in $page.posts.edges"
+                    :key="post.id"
+                    class="border-b border-gray-200 py-8 lg:w-4/5 w-full"
+                  >
+                    <time
+                      :datetime="post.node.date"
+                      class="text-green-700 uppercase font-semibold text-md tracking-wider opacity-75"
+                    >{{post.node.date}}</time>
+                    <h2>
+                      <g-link :to="post.node.path" class="text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">{{ post.node.title }}</g-link>
+                    </h2>
+                    <div class="text-lg text-gray-600">{{ post.node.summary }}</div>
+                  </article>
+                </div>
               </div>
               <!-- end projects -->
             </div>
@@ -421,7 +426,7 @@ query HomePosts {
       dataset
     }
   }
-  photos: allSanityPost (sortBy: "publishedAt", order: DESC, limit: 6) {
+  photos: allSanityPost (sortBy: "publishedAt", order: DESC, limit: 8) {
     totalCount
     pageInfo {
       totalPages

@@ -5,26 +5,26 @@
         <div
           class="projects container mx-auto text-xl border-t border-gray-500 border-b py-16 mb-8 relative"
         >
-          <div
+          <article
             v-for="post in $page.posts.edges"
             :key="post.id"
             class="post border-gray-400 border-b mb-12"
           >
+          <time
+                      :datetime="post.node.date"
+                      class="text-green-700 uppercase font-semibold text-md tracking-wider opacity-75"
+                    >{{post.node.date}}</time>
             <h2 class="text-3xl font-bold">
-              <g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link>
+              <g-link :to="post.node.path" class="text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">{{ post.node.title }}</g-link>
             </h2>
-            <div class="text-copy-secondary mb-4">
-              <span>{{ post.node.date }}</span>
-              <span>&middot;</span>
-              <span>{{ post.node.section }}</span>
-            </div>
+
 
             <div class="text-lg mb-4">{{ post.node.summary }}</div>
 
             <div class="mb-8">
               <g-link :to="post.node.path" class="font-bold uppercase">Read More</g-link>
             </div>
-          </div>
+          </article>
           <!-- end post -->
 
           <pagination-posts
