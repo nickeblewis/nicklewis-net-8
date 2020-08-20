@@ -61,3 +61,6 @@ https://flaviocopes.com/data-models/
 https://flaviocopes.com/entity-relationship/
 
 - [ ] cover netlify features in articles
+
+## Picking up from where we left off
+

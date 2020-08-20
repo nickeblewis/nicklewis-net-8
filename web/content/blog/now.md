@@ -19,7 +19,7 @@ tags:
 Currently working part-time for a digital agency and filling the rest of the time with projects of my own such as my ongoing course writing and other things. So please contact me if you need me for projects.
 
 ### Website updates
-My website nicklewis.net is to become what is known as a Digital Garden, so will be less blog and more like a Wiki. essentially less diary and more documentary.
+My website nicklewis.net is to become what is known as a [Digital Garden](/digital-garden), so will be less blog and more like a Wiki. essentially less diary and more documentary.
 
 * Guides section is based on a template I took from somewhere else and will in fact work very well for my photowalks section. So the name Guides could be re-named as such.
 * Would be great to check whether paths in the file and folder hieararchy convert to well to website paths?
@@ -101,3 +101,4 @@ https://moderncss.dev/
 
 
 * https://www.drewtown.dev/post/display-external-user-avatars-using-strapis-custom-routes-as-a-proxy/
+

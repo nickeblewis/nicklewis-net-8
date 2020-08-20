@@ -85,7 +85,6 @@ module.exports = {
       options: {
         typeName: 'Code', // Required
         baseDir: './content/code', // Where .md files are located
-        pathPrefix: '/code', // Add route prefix. Optional
         template: './src/templates/Code.vue',
         refs: {
           tags: {

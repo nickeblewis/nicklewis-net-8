@@ -1,48 +1,33 @@
 <template>
   <Layout>
     <article>
-    <!-- COVER IMAGE -->
-    <div id="image" class="px-4">
-      <div class="hidden w-full
-        border-2 border-black
-        image-cover
-        guide-cover
-        mb-8
-        max-h-full
-        sm:flex sm:items-center sm:justify-center"
-        v-if="$page.code.coverImage"
-      :style="`background-image: url('${$page.code.coverImage.src}')`">
-        <span class="stripe-shadow-white max-w-xl mx-auto p-4 font-bold text-3xl uppercase leading-none tracking-wide">
-            {{$page.code.city}}
-        </span>
+      <!-- COVER IMAGE -->
+      <!-- <div id="image" class="px-4"> -->
+        <!-- <div
+          class="hidden w-full border-2 border-black image-cover guide-cover mb-8 max-h-full sm:flex sm:items-center sm:justify-center"
+          v-if="$page.code.coverImage"
+          :style="`background-image: url('${$page.code.coverImage.src}')`"
+        > -->
+          <!-- <span
+            class="stripe-shadow-white max-w-xl mx-auto p-4 font-bold text-3xl uppercase leading-none tracking-wide"
+          >{{$page.code.city}}</span> -->
+        <!-- </div> -->
+      <!-- </div> -->
+      <div class="py-1 bg-white overflow-hidden">
+        <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
+          <div class="container mx-auto">
+
+            <VueRemarkContent class="markdown-body mb-8" />
+            <div class="mb-8">
+              <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
+            </div>
+          </div>
+
+          </div>
+        </div>
       </div>
-    </div>
-    <header id="header" class="mb-8">
-      <div class="px-4 max-w-xl mx-auto">
-        <h1 class="text-3xl font-bold leading-none mb-2">{{ $page.code.title }}</h1>
-        <!-- <hr class="border-black border-b-2 mb-4"/> -->
-        <!-- <p class="text-xl ">{{ $page.code.summary }}</p> -->
-      </div>
-    </header>
-    <section id="navigation-top" v-if="$page.code.series && $page.code.chapter > 0" class="content px-4 max-w-xl mx-auto">
-      <series-navigation
-        :total-chapters="$page.code.series.belongsTo.totalCount"
-        :current-chapter="$page.code.chapter"
-        :chapters="$page.code.series.belongsTo.edges.map(edge => edge.node)"/>
-    </section>
-    <section  id="content" class="content px-4 max-w-xl mx-auto">
-      <div class="markdown-body mb-8">
-        Please note that this section of the site is my place for tracking what I am learning and that it may not be fully refined just yet. So please bear this in mind if you have stumbled upon this page via a Google search :-)
-      </div>
-      <vue-remark-content class="markdown-body mb-8"/>
-    </section>
-    <section  id="navigation-bottom"  v-if="$page.code.series && $page.code.chapter > 0" class="content px-4 max-w-xl mx-auto">
-      <series-navigation
-        :total-chapters="$page.code.series.belongsTo.totalCount"
-        :current-chapter="$page.code.chapter"
-        :chapters="$page.code.series.belongsTo.edges.map(edge => edge.node)"/>
-    </section>
-  </article>
+
+    </article>
   </Layout>
 </template>
 
