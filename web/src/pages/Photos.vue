@@ -86,7 +86,7 @@ query SanityPosts ($page: Int) {
       dataset
     }
   }
-  posts: allSanityPost (sortBy: "updatedAt", order: DESC, perPage: 6, page: $page) @paginate {
+  posts: allSanityPost (sortBy: "publishedAt", order: DESC, perPage: 6, page: $page) @paginate {
     totalCount
     pageInfo {
       totalPages
