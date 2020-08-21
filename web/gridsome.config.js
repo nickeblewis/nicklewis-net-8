@@ -20,7 +20,7 @@ const postcssPlugins = [
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
-  siteName: 'Nick Lewis',
+  siteName: 'Nick Lewis - JavaScript Developer and Photographer',
   siteDescription: 'I am a freelance tech writer, web developer and photographer, teaching the world about the wealth of possibility',
   siteUrl: 'https://nicklewis.net',
   templates: {
@@ -127,37 +127,8 @@ module.exports = {
         baseDir: './content/pages', // Where .md files are located
         pathPrefix: '/', // Add route prefix. Optional
         template: './src/templates/SinglePage.vue'
-        // plugins: [
-        //   [
-        //     'remark-toc',
-        //     {
-        //       heading: 'Buildings',
-        //       maxDepth: 2,
-        //     },
-        //   ],
-        // ],
       }
     }
-    /* {
-      // Create posts from content files
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'Post',
-        path: 'content/posts/*.md',
-        route: '/:slug',
-        refs: {
-          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
-          tags: {
-            typeName: 'Tag',
-            route: '/tag/:id',
-            create: true
-          }
-        }
-      },
-      {
-
-      }
-    } */
   ],
   transformers: {
     remark: {
