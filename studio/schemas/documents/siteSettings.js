@@ -21,6 +21,11 @@ export default {
       title: 'Home Intro'
     },
     {
+      name: 'homeBio',
+      type: 'text',
+      title: 'Home Bio'
+    },
+    {
       name: 'keywords',
       type: 'array',
       title: 'Keywords',
