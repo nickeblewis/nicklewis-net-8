@@ -188,7 +188,7 @@
                 </div>
                 <p
                   class="mb-2 mt-6 text-lg border-b border-gray-200 pb-6"
-                >I have 25 years experience in the software industry. I am a highly experienced front-end web developer who specialises in VueJS/Gridsome at the current point in time. I am setting out to write about my experience through this website and hope that my blog posts and documentation can help you in some way, whether you are trying to get your head around the latest tech or are seeking the kind of consultancy services I offer on a freelance basis.</p>
+                >{{ $static.settings.homeBio }}</p>
               </div>
 
               <h3
@@ -417,6 +417,43 @@
     </div>
   </Layout>
 </template>
+
+<static-query>
+query {
+  metadata {
+    sanityOptions{
+      projectId
+      dataset
+    }
+  }
+  settings: sanitySiteSettings(id: "siteSettings") {
+    title
+    description
+    homeBio
+    author {
+      name
+      image {
+        asset {
+          _id
+          url
+        }
+        hotspot {
+          x
+          y
+          width
+          height
+        }
+        crop {
+          top
+          left
+          right
+          bottom
+        }
+      }
+    }
+  }
+}
+</static-query>
 
 <page-query>
 query HomePosts {

@@ -31,6 +31,7 @@ query {
   settings: sanitySiteSettings(id: "siteSettings") {
     title
     description
+    homeBio
     author {
       name
       image {
