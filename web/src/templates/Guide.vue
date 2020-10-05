@@ -129,7 +129,7 @@ export default {
 
 
 
-.content h2, h3 {
+/* .content h2, h3 {
   @apply font-bold;
 }
 .content h2 {
@@ -140,17 +140,17 @@ export default {
 }
 .content  ul {
   list-style-type: square;
-}
+} */
 /* .content  ul > li {
   @apply mb-2;
 } */
-.guide-cover {
+/* .guide-cover {
   height: 320px;
 }
 
 .content #buildings + ul, .content nav > ul {
   @apply list-none;
-}
+} */
 /* .content #buildings + ul > li, .content nav > p, .content nav > ul > li {
   @apply mb-1;
 } */
