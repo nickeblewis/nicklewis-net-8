@@ -1,7 +1,7 @@
 <template>
-  <div id="app" class="min-h-screen bg-white border-t-14 border-green-700" :class="theme">
+  <div id="app" class="min-h-screen bg-white border-t-14 border-green-700">
     <!-- <header class="border-t-14 border-green-700"> -->
-    <div class="container mx-auto">
+    <div class="pb-4 content bg-gray-200 pt-4">
 <!-- <nav class="bg-white border-b border-gray-200"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between h-16"><div class="flex"><div class="flex-shrink-0 flex items-center"><a href="/" class="active--exact active"><h1 class="inline-block ml-2 text-xl text-red-700">
                   Nick Lewis
                 </h1></a></div><div class="hidden sm:-my-px sm:ml-6 sm:flex"><a href="/photos" class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent
@@ -108,15 +108,15 @@
           <li class="mr-8 mb-6 lg:mb-0">
             <search-input />
           </li>
-          <li class="mr-8 mb-6 lg:mb-0">
+          <!-- <li class="mr-8 mb-6 lg:mb-0">
             <theme-switcher :theme="theme" @themeChanged="updateTheme" />
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
     <!-- </header> -->
 
-    <main class="pb-4 content pt-4">
+    <main class="content pt-4">
       <slot />
     </main>
     <footer class="bg-green-700 text-white">
