@@ -304,7 +304,7 @@
                     name="name"
                     id="name"
                     placeholder="Joe Bloggs"
-                    class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none border-green-700 focus:border-white mb-2 p-4"
+                    class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none border-green-700 focus:border-white mb-2 p-4 text-white"
                     v-model="formData.name"
                     required
                   />
@@ -318,7 +318,7 @@
                     name="email"
                     id="email"
                     placeholder="email@example.com"
-                    class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none border-green-700 focus:border-white mb-2 p-4"
+                    class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none border-green-700 focus:border-white mb-2 p-4 text-white"
                     v-model="formData.email"
                     required
                   />
@@ -332,7 +332,7 @@
                   id="message"
                   rows="5"
                   name="message"
-                  class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none border-green-700 focus:border-white mb-2 px-4 py-4"
+                  class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none appearance-none border-green-700 focus:border-white mb-2 px-4 py-4 text-white"
                   placeholder="Enter your message here."
                   v-model="formData.message"
                   required
@@ -396,7 +396,7 @@
                     name="email"
                     id="email"
                     placeholder="email@example.com"
-                    class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none border-green-700 focus:border-white mb-2 p-4"
+                    class="block w-full bg-background-form border border-border-color-primary shadow rounded outline-none border-green-700 focus:border-white mb-2 p-4 text-white"
                     required
                   />
                 </div>
