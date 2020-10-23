@@ -19,11 +19,11 @@
             <!-- <h2 class="text-3xl font-bold"><g-link :to="post.node.slug.current" class="text-copy-primary">{{ post.node.title }}</g-link></h2> -->
             <g-link :to="post.node.slug.current">
               <g-image
-                alt="Cover image"
-                v-if="post.node.mainImage"
-                class="justify-center border-black border-8"
-                :src="$urlForImage(post.node.mainImage, $page.metadata.sanityOptions).url()"
-              />
+                          v-if="post.node.mainImage"
+                          alt="Cover image"
+                          class="border-2 border-black mb-4"
+                          :src="$urlForImage(post.node.mainImage, $page.metadata.sanityOptions).format('jpg').width(800).quality(60).url()"
+                        />
             </g-link>
             <!-- <div class="px-6 py-4">
           <span

@@ -48,7 +48,7 @@
                   </svg>
                 </div>
 
-                <div class="border-b border-gray-200 lg:w-4/5 w-full">
+                <!-- <div class="border-b border-gray-200 lg:w-4/5 w-full">
                   <masonry :cols="{default: 4, 1024: 4,  768: 2, 640: 1, 375: 1}" :gutter="0">
                     <div v-for="photo in $page.photos.edges" :key="photo.id" class="py-1 sm:px-1">
                       <g-link :to="photo.node.slug.current">
@@ -61,6 +61,30 @@
                       </g-link>
                     </div>
                   </masonry>
+                </div> -->
+                <div class="text-lg sm:text-xl lg:w-4/5 w-full">
+                  <article
+                    v-for="post in $page.photos.edges"
+                    :key="post.id"
+                    class="border-b border-gray-200 py-8 lg:w-4/5 w-full"
+                  >
+                    <time
+                      :datetime="post.node.publishedAt"
+                      class="text-green-700 uppercase font-semibold text-md tracking-wider opacity-75"
+                    >{{post.node.publishedAt}}</time>
+                    <h2>
+                      <g-link :to="post.node.path" class="text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">{{ post.node.title }}</g-link>
+                    </h2>
+                    <g-link :to="post.node.slug.current">
+                        <g-image
+                          v-if="post.node.mainImage"
+                          alt="Cover image"
+                          class="border-2 border-black mb-4"
+                          :src="$urlForImage(post.node.mainImage, $page.metadata.sanityOptions).format('jpg').width(800).quality(60).url()"
+                        />
+                      </g-link>
+                    <block-content class="text-lg mb-4" :blocks="post.node._rawExcerpt" />
+                  </article>
                 </div>
               </div>
               <!-- end photos -->
@@ -463,7 +487,7 @@ query HomePosts {
       dataset
     }
   }
-  photos: allSanityPost (sortBy: "publishedAt", order: DESC, limit: 8) {
+  photos: allSanityPost (sortBy: "publishedAt", order: DESC, limit: 6) {
     totalCount
     pageInfo {
       totalPages
@@ -475,6 +499,7 @@ query HomePosts {
         title
         publishedAt (format: "MMMM D, Y")
         _rawExcerpt
+        _rawBody
         mainImage {
           asset {
             _id
@@ -535,12 +560,14 @@ query HomePosts {
 <script>
 import Vue from 'vue'
 import VueMasonry from 'vue-masonry-css'
+import BlockContent from '~/components/BlockContent'
 
 Vue.use(VueMasonry)
 
 export default {
   components: {
     VueMasonry,
+    BlockContent
   },
   data() {
     return {
