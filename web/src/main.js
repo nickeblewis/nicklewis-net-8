@@ -27,6 +27,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.use(VueMasonry)
   Vue.use(VueDisqus)
   Vue.use(CoolLightBox)
+  Vue.use(VueYoutube)
 
 
   //Vue.use(VueFbCustomerChat, {
