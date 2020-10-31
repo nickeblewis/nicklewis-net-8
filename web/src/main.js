@@ -8,6 +8,10 @@ import VueDisqus from 'vue-disqus'
 import VueMasonry from 'vue-masonry-css';
 import CoolLightBox from 'vue-cool-lightbox'
 import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
+import '@/css/style.scss';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { focusHandling } from 'cruip-js-toolkit'
 
 // Import image url builder
 import urlForImage from './utils/urlForImage'
@@ -28,6 +32,8 @@ export default function (Vue, { router, head, isClient }) {
   Vue.use(VueDisqus)
   Vue.use(CoolLightBox)
   Vue.use(VueYoutube)
+  Vue.use(AOS.init());
+
 
 
   //Vue.use(VueFbCustomerChat, {
@@ -51,9 +57,9 @@ export default function (Vue, { router, head, isClient }) {
     content: 'Nick Lewis'
   })
 
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700'
-  })
+  // head.link.push({
+  //   rel: 'stylesheet',
+  //   href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700'
+  // })
 }
 
