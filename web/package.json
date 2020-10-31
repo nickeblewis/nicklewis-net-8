@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "gridsome-plugin-remark-codetitle": "^0.2.2",
+    "cruip-js-toolkit": "^1.0.2",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "tailwindcss": "^1.8.12"
