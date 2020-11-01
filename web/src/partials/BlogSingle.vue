@@ -18,6 +18,7 @@
                 <div class="flex items-center justify-center" data-aos="fade-up" data-aos-delay="400">
                   <a href="#0">
                     <img class="rounded-full flex-shrink-0 mr-4" :src="require('@/images/news-author-04.jpg')" width="40" height="40" alt="Author 04" />
+                    
                   </a>
                   <div>
                     <a class="font-medium text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0">Chris Solerieu</a>
@@ -250,6 +251,9 @@
 
 <script>
 export default {
+  props: {
+    post: Object
+  },
   name: 'BlogSingle'
 }
 </script>

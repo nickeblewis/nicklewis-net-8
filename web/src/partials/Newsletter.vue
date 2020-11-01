@@ -27,10 +27,14 @@
           </div>
 
           <!-- CTA form -->
-          <form class="w-full lg:w-1/2">
+          <form class="w-full lg:w-1/2" action="https://buttondown.email/api/emails/embed-subscribe/nickeblewis" method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/nickeblewis', 'popupwindow')">
             <div class="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
-              <input type="email" class="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400" placeholder="Your best email…" aria-label="Your best email…" />
-              <a class="btn text-purple-600 bg-purple-100 hover:bg-white shadow" href="#0">Subscribe</a>
+              <input type="email" name="email" class="w-full appearance-none bg-purple-700 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400" placeholder="Your best email…" aria-label="Your best email…" />
+              <input type="hidden" value="1" name="embed"></input>
+  <input class="btn text-purple-600 bg-purple-100 hover:bg-white shadow"type="submit" value="Subscribe"></input>
+              <!-- <a class="btn text-purple-600 bg-purple-100 hover:bg-white shadow" href="#0">Subscribe</a> -->
             </div>
             <!-- Success message -->
             <!-- <p class="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Thanks for subscribing!</p> -->
@@ -49,3 +53,19 @@ export default {
   name: 'Newsletter'
 }
 </script>
+
+<form
+  action="https://buttondown.email/api/emails/embed-subscribe/nickeblewis"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/nickeblewis', 'popupwindow')"
+  class="embeddable-buttondown-form"
+>
+  <label for="bd-email">Enter your email</label>
+  <input type="email" name="email" id="bd-email"></input>
+  <input type="hidden" value="1" name="embed"></input>
+  <input type="submit" value="Subscribe"></input>
+  <p>
+    <a href="https://buttondown.email" target="_blank">Powered by Buttondown.</a>
+  </p>
+</form>

@@ -16,7 +16,7 @@
             <article class="flex flex-col h-full" data-aos="fade-up" v-for="post in $page.photos.edges"
                     :key="post.id">
               <header>
-                <router-link to="/blog-post" class="block mb-6">
+                <router-link :to="post.node.slug.current" class="block mb-6">
                   <figure class="relative h-0 pb-9/16 overflow-hidden rounded-sm">
                     <!-- <img class="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" :src="require('@/images/news-01.jpg')" width="352" height="198" alt="News 01" /> -->
                     <g-image

@@ -13,7 +13,7 @@
       </div>
 
       <!-- Page sections -->
-      <BlogSingle />
+      <BlogSingle :post="post"/>
       <Newsletter />
 
     </main>
@@ -33,6 +33,9 @@ import Footer from './../partials/Footer.vue'
 
 export default {
   name: 'BlogPost',
+  props: {
+    post: Object
+  },
   components: {
     Header,
     PageIllustration,
