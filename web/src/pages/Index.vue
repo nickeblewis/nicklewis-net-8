@@ -103,34 +103,6 @@ query HomePosts {
       }
     }
   }
-  posts: allPost (limit: 3, sortBy: "date", order: DESC, filter: { published: { eq: true }}) {
-    edges {
-      node {
-        id
-        title
-        published
-        section
-        date (format: "MMMM D, Y")
-        summary
-
-        path
-      }
-    }
-  }
-  features: allPost (limit: 4, sortBy: "date", order: DESC, filter: { published: { eq: true }, featured: { eq: true }}) {
-    edges {
-      node {
-        id
-        title
-        published
-        section
-        date (format: "MMMM D, Y")
-        summary
-
-        path
-      }
-    }
-  }
 }
 </page-query>
 

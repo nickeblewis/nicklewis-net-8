@@ -25,7 +25,7 @@ module.exports = {
   siteUrl: 'https://nicklewis.net',
   templates: {
     SanityPost: [
-      { path: '/blog/:year/:month/:slug__current'},
+      { path: '/blog/:year/:month/:slug__current'},      
       { name: 'Features', path: '/:slug__current'},
     ]
   },
@@ -52,91 +52,9 @@ module.exports = {
         watchMode: !isProd
       }
     },
-    {
-      use: '@gridsome/vue-remark',
-      options: {
-        typeName: 'Guide', // Required
-        baseDir: './content/guides', // Where .md files are located
-        pathPrefix: '/guides', // Add route prefix. Optional
-        template: './src/templates/Guide.vue',
-        refs: {
-          tags: {
-            typeName: 'Tag',
-            create: true,
-          },
-          series: {
-            typeName: 'Series',
-            create: true,
-          },
-        },
-        plugins: [
-          [
-            'remark-toc',
-            {
-              heading: 'Buildings',
-              maxDepth: 2,
-            },
-          ],
-        ],
-      },
-    },
-    {
-      use: '@gridsome/vue-remark',
-      options: {
-        typeName: 'Code', // Required
-        baseDir: './content/code', // Where .md files are located
-        template: './src/templates/Code.vue',
-        refs: {
-          tags: {
-            typeName: 'Tag',
-            create: true,
-          },
-          series: {
-            typeName: 'Series',
-            create: true,
-          },
-        },
-        plugins: [
-          [
-            'remark-toc',
-            {
-              heading: 'Coding',
-              maxDepth: 2,
-            },
-          ],
-        ],
-      },
-    },
-    {
-      use: "@gridsome/vue-remark",
-      options: {
-        typeName: "Post",
-        baseDir: "./content/blog",
-        template: "./src/templates/Post.vue",
-        pathPrefix: "/blog",
-        route: "/:slug",
-        plugins: [
-          [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
-        ]
-      }
-    },
-    {
-      use: '@gridsome/vue-remark',
-      options: {
-        typeName: 'SinglePage', // Required
-        baseDir: './content/pages', // Where .md files are located
-        pathPrefix: '/', // Add route prefix. Optional
-        template: './src/templates/SinglePage.vue'
-      }
-    }
+   
   ],
-  transformers: {
-    remark: {
-      externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link',
-    }
-  },
+  
   css: {
     loaderOptions: {
       postcss: {

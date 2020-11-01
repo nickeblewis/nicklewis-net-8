@@ -2,8 +2,6 @@
   <Layout>
     <div class="py-1 bg-white overflow-hidden">
       <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
-        <!-- <div class="flex flex-wrap justify-center sm:w-full md:w-full lg:w-full xl:w-full"> -->
-        <!-- <div class="container-inner mx-auto py-16"> -->
         <div
           class="projects container mx-auto text-xl border-t border-gray-500 border-b py-16 mb-8 relative"
         >
@@ -16,7 +14,6 @@
               :datetime="post.node.publishedAt"
               class="text-green-700 uppercase font-semibold text-md tracking-wider opacity-75"
             >{{post.node.publishedAt}}</time>
-            <!-- <h2 class="text-3xl font-bold"><g-link :to="post.node.slug.current" class="text-copy-primary">{{ post.node.title }}</g-link></h2> -->
             <g-link :to="post.node.slug.current">
               <g-image
                           v-if="post.node.mainImage"
@@ -25,17 +22,6 @@
                           :src="$urlForImage(post.node.mainImage, $page.metadata.sanityOptions).format('jpg').width(800).quality(60).url()"
                         />
             </g-link>
-            <!-- <div class="px-6 py-4">
-          <span
-            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-          >#photography</span>
-          <span
-            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-          >#travel</span>
-          <span
-            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
-          >#winter</span>
-            </div>-->
             <h2 class="text-3xl font-bold py-4">
               <g-link
                 :to="post.node.path"
@@ -45,21 +31,6 @@
 
             <block-content class="text-lg mb-4" :blocks="post.node._rawExcerpt" />
 
-            <!-- <div class="mb-8">
-              <g-link :to="post.node.path" class="font-bold uppercase">Full Gallery...</g-link>
-            </div> -->
-            <!-- <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">{{ post.node.title }}</div>
-              <div class="text-lg mb-4">
-                <span>{{post.node.publishedAt}}</span>
-              </div>
-              <div class="text-lg mb-4">
-                <block-content :blocks="post.node._rawExcerpt" />
-              </div>
-              <div class="mb-8 justify-center">
-                <g-link :to="post.node.slug.current" class="font-bold uppercase">Read More</g-link>
-              </div>
-            </div>-->
           </article>
           <!-- end post -->
           <div class="px-6 py-4">
@@ -72,8 +43,6 @@
           </div>
         </div>
       </div>
-      <!-- </div> -->
-      <!-- </div> -->
     </div>
   </Layout>
 </template>

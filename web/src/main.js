@@ -32,7 +32,9 @@ export default function (Vue, { router, head, isClient }) {
   Vue.use(VueDisqus)
   Vue.use(CoolLightBox)
   Vue.use(VueYoutube)
-  Vue.use(AOS.init());
+  if (process.isClient) {
+    Vue.use(AOS.init());
+  }
 
 
 
