@@ -118,3 +118,7 @@ nav .active {
   height: 100%;
   border: 0;
 }
+
+.sanity-content p {
+  margin-bottom: 2rem;
+}

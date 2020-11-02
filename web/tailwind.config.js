@@ -5,6 +5,33 @@ module.exports = {
     'src/**/*.vue',
   ],
   theme: {
+    typography: {
+      default: {
+        css: {
+          color: '#fff',
+          a: {
+            color: '#fff',
+            '&:hover': {
+              color: '#fff',
+            },
+          },
+          h3: {
+            color: '#fff'
+          },
+          h4: {
+            color: '#fff'
+          },
+          blockquote: {
+            color: '#fff'
+          },
+          strong: {
+            color: '#fff',
+          },
+          
+        },
+      },
+    },
+
     extend: {
       colors: {
         gray: {
@@ -115,6 +142,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/custom-forms'),
+    require('@tailwindcss/typography'),
   ],
 };
 

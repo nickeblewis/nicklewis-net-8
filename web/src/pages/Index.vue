@@ -7,7 +7,7 @@
       <!-- <FeaturesHome /> -->
       <!-- <Tabs /> -->
       <!-- <Target /> -->
-      <News />
+      <News/>
       <Newsletter />
 
     
@@ -75,6 +75,16 @@ query HomePosts {
         title
         tags
         publishedAt (format: "MMMM D, Y")
+        authors {
+          author {
+            name
+            image {
+              asset {
+                url
+              }
+            }
+          }
+        }
         _rawExcerpt
         _rawBody
         mainImage {
