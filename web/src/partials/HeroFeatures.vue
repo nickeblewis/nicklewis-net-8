@@ -19,12 +19,11 @@
       <div class="relative pt-32 pb-12 md:pt-40 md:pb-20">
         <!-- Content -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-          <h1 class="h1 mb-4" data-aos="fade-up">Keep track of every important detail</h1>
-          <p class="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200">Every feature in Open PRO makes things easy to build, pleasant to create,
-            and simple to manage.</p>
+          <h1 class="h1 mb-4" data-aos="fade-up">Building websites the new way</h1>
+          <p class="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200">Let us introduce you to Sanity Studio, the bold new way of managing your organisation's content.</p>
         </div>
         <!-- Image -->
-        <img class="mx-auto" :src="require('@/images/hero-image-02.png')" width="768" height="432" alt="Hero" data-aos="fade-up" data-aos-delay="400" />
+        <img class="mx-auto" :src="require('@/images/screenshot-1.png')" width="768" height="432" alt="Hero" data-aos="fade-up" data-aos-delay="400" />
       </div>
 
     </div>

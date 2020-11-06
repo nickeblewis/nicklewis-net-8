@@ -1,96 +1,123 @@
 <template>
   <Layout>
     <section class="relative">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="pt-32 pb-12 md:pt-40 md:pb-20">
-        <div class="max-w-3xl mx-auto">
-          <div>
-            <header class="mb-8">
-              <!-- Title and excerpt -->
-              <div class="text-center md:text-left">
-                <h1 class="h1 mb-4" data-aos="fade-up">{{ $page.post.title}}</h1>
-                <block-content class="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200" :blocks="$page.post._rawExcerpt" />
-                <!-- <p class="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p> -->
-              </div>
-              <!-- Article meta -->
-              <div class="md:flex md:items-center md:justify-between mt-3">
-                <!-- Author meta -->
-                <div class="flex items-center justify-center" data-aos="fade-up" data-aos-delay="400">
-                  <a href="#0">
-                    <img class="rounded-full flex-shrink-0 mr-4" :src="$page.post.authors[0].author.image.asset.url" width="40" height="40" alt="Author 04" />     
-                  </a>
-                  <div>
-                    <a class="font-medium text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out" href="#0">{{ $page.post.authors[0].author.name}}</a>
-                    <span class="text-gray-700"> - </span>
-                    <span class="text-gray-500">{{ $page.post.publishedAt }}</span>
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="pt-32 pb-12 md:pt-40 md:pb-20">
+          <div class="max-w-3xl mx-auto">
+            <div>
+              <header class="mb-8">
+                <!-- Title and excerpt -->
+                <div class="text-center md:text-left">
+                  <h1 class="h1 mb-4" data-aos="fade-up">{{ $page.post.title }}</h1>
+                  <block-content
+                    class="text-xl text-gray-400"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    :blocks="$page.post._rawExcerpt"
+                  />
+                  <!-- <p class="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p> -->
+                </div>
+                <!-- Article meta -->
+                <div class="md:flex md:items-center md:justify-between mt-3">
+                  <!-- Author meta -->
+                  <div
+                    class="flex items-center justify-center"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <a href="#0">
+                      <img
+                        class="rounded-full flex-shrink-0 mr-4"
+                        :src="$page.post.authors[0].author.image.asset.url"
+                        width="40"
+                        height="40"
+                        alt="Author 04"
+                      />
+                    </a>
+                    <div>
+                      <a
+                        class="font-medium text-gray-200 hover:text-gray-100 transition duration-150 ease-in-out"
+                        href="#0"
+                        >{{ $page.post.authors[0].author.name }}</a
+                      >
+                      <span class="text-gray-700"> - </span>
+                      <span class="text-gray-500">{{ $page.post.publishedAt }}</span>
+                    </div>
+                  </div>
+                  <!-- Article tags -->
+                  <div
+                    class="flex justify-center mt-4 md:mt-0"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                  >
+                    <ul class="flex flex-wrap text-xs font-medium -m-1">
+                      <li class="m-1" v-for="tag in $page.post.tags" :key="tag">
+                        <a
+                          class="inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out"
+                          href="#0"
+                          >{{ tag }}</a
+                        >
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <!-- Article tags -->
-                <div class="flex justify-center mt-4 md:mt-0" data-aos="fade-up" data-aos-delay="600">
-                  <ul class="flex flex-wrap text-xs font-medium -m-1">
-                    <li class="m-1" v-for="tag in $page.post.tags" :key="tag">
-                      <a class="inline-flex text-center text-gray-100 py-1 px-3 rounded-full bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out" href="#0">{{tag}}</a>
-                    </li>
-                  </ul>
+              </header>
+
+              <!-- Article image -->
+              <figure class="mb-8 lg:-ml-32 lg:-mr-32" data-aos="fade-up" data-aos-delay="600">
+                <!-- <img class="w-full" :src="require('@/images/news-single.jpg')" width="1024" height="576" alt="News single" /> -->
+                <g-image
+                  v-if="$page.post.mainImage"
+                  alt="Cover image"
+                  class="w-full"
+                  :src="
+                    $urlForImage($page.post.mainImage, $page.metadata.sanityOptions)
+                      .format('jpg')
+                      .url()
+                  "
+                />
+              </figure>
+
+              <!-- Article content -->
+              <article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+                <block-content
+                  class="text-lg text-gray-400"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  :blocks="$page.post._rawBody"
+                />
+              </article>
+
+              <masonry :cols="{ default: 2, 1024: 2, 760: 2, 640: 1, 375: 1 }" :gutter="0">
+                <div
+                  v-for="(image, imageIndex) in items"
+                  :key="imageIndex"
+                  @click="setIndex(imageIndex)"
+                  class="py-1 sm:px-1"
+                >
+                  <g-image
+                    alt="Cover image"
+                    class="border-2 border-black"
+                    :src="`${image.src}?w=600`"
+                  />
                 </div>
-              </div>
-            </header>
-
-            <!-- Article image -->
-            <figure class="mb-8 lg:-ml-32 lg:-mr-32" data-aos="fade-up" data-aos-delay="600">
-              <!-- <img class="w-full" :src="require('@/images/news-single.jpg')" width="1024" height="576" alt="News single" /> -->
-              <g-image
-                          v-if="$page.post.mainImage"
-                          alt="Cover image"
-                          class="w-full"
-                          :src="$urlForImage($page.post.mainImage, $page.metadata.sanityOptions).format('jpg').url()"
-                        />
-            </figure>
-
-            <!-- Article content -->
-            <article class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
-              <block-content class="text-lg text-gray-400" data-aos="fade-up" data-aos-delay="200" :blocks="$page.post._rawBody" />
-            </article>
-
-            <masonry :cols="{default: 2, 1024: 2, 760: 2, 640: 1, 375: 1}" :gutter="0">
-            <div
-              v-for="(image, imageIndex) in items"
-              :key="imageIndex"
-              @click="setIndex(imageIndex)"
-              class="py-1 sm:px-1"
-            >
-              <g-image
-                alt="Cover image"
-                class="border-2 border-black"
-                :src="`${image.src}?w=600`"
-              />
+              </masonry>
+              <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
             </div>
-          </masonry>
-            
-
-          
           </div>
 
+          <!-- Related articles -->
+          <aside class="mt-20">
+            <div class="max-w-sm mx-auto md:max-w-none">
+              <!-- Section title -->
+              <!-- <h4 class="h4 py-6 mb-10 border-t border-b border-gray-700">More from Nick Lewis Digital</h4> -->
+
+              <News />
+            </div>
+          </aside>
         </div>
-
-        <!-- Related articles -->
-        <aside class="mt-20">
-          <div class="max-w-sm mx-auto md:max-w-none">
-
-            <!-- Section title -->
-            <!-- <h4 class="h4 py-6 mb-10 border-t border-b border-gray-700">More from Nick Lewis Digital</h4> -->
-
-              <News/>
-           
-           
-
-          </div>
-        </aside>
-
       </div>
-    </div>
-  </section>
-   
+    </section>
   </Layout>
 </template>
 
@@ -238,7 +265,7 @@ export default {
   data: function () {
     return {
       index: null,
-      items: []
+      items: [],
     }
   },
   methods: {
@@ -252,13 +279,11 @@ export default {
   created() {
     let nick = JSON.parse(JSON.stringify(this.$page.post))
 
-    nick.images.forEach(element => {
-      this.items.push({ src: element.asset.url, description: '', alt: '', thumbnailWidth: '220px'})
+    nick.images.forEach((element) => {
+      this.items.push({ src: element.asset.url, description: '', alt: '', thumbnailWidth: '220px' })
     })
 
     //console.log(nick.images)
-
-
   },
   metaInfo() {
     return {

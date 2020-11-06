@@ -5,7 +5,7 @@
 
         <!-- Section header -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-          <h2 class="h2" data-aos="fade-up">Latest photography, articles and more</h2>
+          <h2 class="h2" data-aos="fade-up">Photography, Projects and more</h2>
         </div>
 
         <!-- Articles list -->

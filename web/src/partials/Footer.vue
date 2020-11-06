@@ -24,38 +24,44 @@
 
             <!-- 2nd block -->
             <div class="text-sm">
-              <h6 class="text-gray-200 font-medium mb-1">Products</h6>
+              <h6 class="text-gray-200 font-medium mb-1">Products/Services</h6>
               <ul>
                 <li class="mb-1">
-                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Web Studio</router-link>
+                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Sanity Studio</router-link>
                 </li>
                 <li class="mb-1">
-                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">DynamicBox Flex</router-link>
+                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Umbraco</router-link>
                 </li>
                 <li class="mb-1">
-                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Programming Forms</router-link>
+                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Photography</router-link>
                 </li>
               </ul>
             </div>
 
             <!-- 3rd block -->
             <div class="text-sm">
-              <h6 class="text-gray-200 font-medium mb-1">Resources</h6>
+              <h6 class="text-gray-200 font-medium mb-1">Elsewhere</h6>
               <ul>
                 <li class="mb-1">
-                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Nostrud exercitation</router-link>
+                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Walks Today</router-link>
                 </li>
                 <li class="mb-1">
-                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Visual mockups</router-link>
+                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Heart of Farnborough</router-link>
                 </li>
                 <li class="mb-1">
-                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Nostrud exercitation</router-link>
+                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">This Moment in History</router-link>
                 </li>
                 <li class="mb-1">
-                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Visual mockups</router-link>
+                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Picfair</router-link>
                 </li>
                 <li class="mb-1">
-                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Nostrud exercitation</router-link>
+                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Alamy</router-link>
+                </li>
+                <li class="mb-1">
+                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Pond 5</router-link>
+                </li>
+                <li class="mb-1">
+                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Vimeo</router-link>
                 </li>
               </ul>
             </div>
@@ -65,20 +71,18 @@
               <h6 class="text-gray-200 font-medium mb-1">Company</h6>
               <ul>
                 <li class="mb-1">
-                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Consectetur adipiscing</router-link>
+                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Legal</router-link>
                 </li>
                 <li class="mb-1">
-                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Labore et dolore</router-link>
+                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Privacy Notice</router-link>
                 </li>
                 <li class="mb-1">
-                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Consectetur adipiscing</router-link>
+                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Terms and Conditions</router-link>
                 </li>
                 <li class="mb-1">
-                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Labore et dolore</router-link>
+                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">About</router-link>
                 </li>
-                <li class="mb-1">
-                  <router-link to="#" class="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Consectetur adipiscing</router-link>
-                </li>
+                
               </ul>
             </div>
 

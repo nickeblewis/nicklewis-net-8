@@ -23,7 +23,7 @@
           <!-- CTA content -->
           <div class="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2">
             <h3 class="h3 text-white mb-2">Stay in the loop</h3>
-            <p class="text-purple-200 text-lg">Join our newsletter to get top news before anyone else.</p>
+            <p class="text-purple-200 text-lg">Join our newsletter. Weekly updates!</p>
           </div>
 
           <!-- CTA form -->

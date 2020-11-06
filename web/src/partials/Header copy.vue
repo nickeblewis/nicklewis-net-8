@@ -45,14 +45,14 @@
           </ul>
 
           <!-- Desktop sign in links -->
-          <ul class="flex flex-grow justify-end flex-wrap items-center">
+          <!-- <ul class="flex flex-grow justify-end flex-wrap items-center">
             <li>
               <router-link to="/signin" class="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">Sign in</router-link>
             </li>
             <li>
               <router-link to="/signup" class="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3">Sign up</router-link>
             </li>
-          </ul>
+          </ul> -->
 
         </nav>
 

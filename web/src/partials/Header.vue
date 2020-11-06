@@ -19,7 +19,13 @@
           <!-- Desktop menu links -->
           <ul class="flex flex-grow justify-end flex-wrap items-center">
             <li>
-              <router-link to="/features" class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">Features</router-link>
+              <router-link to="/features" class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">Web</router-link>
+            </li>
+            <li>
+              <router-link to="/features" class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">Photography</router-link>
+            </li>
+            <li>
+              <router-link to="/features" class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">Products</router-link>
             </li>
             <li>
               <router-link to="/pricing" class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">Pricing</router-link>
@@ -30,29 +36,29 @@
             <li>
               <router-link to="/about" class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">About us</router-link>
             </li>
-            <!-- 1st level: hover -->
-            <Dropdown title="Support">
-              <li>
-                <router-link to="/contact" class="font-medium text-sm text-gray-400 hover:text-purple-600 flex py-2 px-4 leading-tight">Contact us</router-link>
+            <li>
+                <router-link to="/contact" class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out">Contact us</router-link>
               </li>
+            <!-- 1st level: hover -->
+            <!-- <Dropdown title="Support">
               <li>
                 <router-link to="/help" class="font-medium text-sm text-gray-400 hover:text-purple-600 flex py-2 px-4 leading-tight">Help center</router-link>
               </li>
               <li>
                 <router-link to="/404" class="font-medium text-sm text-gray-400 hover:text-purple-600 flex py-2 px-4 leading-tight">404</router-link>
               </li>
-            </Dropdown>
+            </Dropdown> -->
           </ul>
 
           <!-- Desktop sign in links -->
-          <ul class="flex flex-grow justify-end flex-wrap items-center">
+          <!-- <ul class="flex flex-grow justify-end flex-wrap items-center">
             <li>
               <router-link to="/signin" class="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out">Sign in</router-link>
             </li>
             <li>
               <router-link to="/signup" class="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3">Sign up</router-link>
             </li>
-          </ul>
+          </ul> -->
 
         </nav>
 
