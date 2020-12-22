@@ -61,14 +61,14 @@ query {
 </static-query>
 
 <page-query>
-query HomePosts {
+query HomePosts ($page: Int) {
   metadata {
     sanityOptions {
       projectId
       dataset
     }
   }
-  photos: allSanityPost (sortBy: "publishedAt", order: DESC, limit: 12) {
+  photos: allSanityPost (sortBy: "publishedAt", order: DESC, perPage: 12, page: $page) @paginate {
     totalCount
     pageInfo {
       totalPages
