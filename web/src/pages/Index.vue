@@ -1,6 +1,5 @@
 <template>
   <Layout>
-    
       <!-- Page sections -->
       <HeroHome />
       <!-- <Process /> -->
@@ -9,12 +8,6 @@
       <!-- <Target /> -->
       <News/>
       <Newsletter />
-
-    
-    
-    
-
-    
   </Layout>
 </template>
 
@@ -127,7 +120,6 @@ import Tabs from './../partials/Tabs.vue'
 import Target from './../partials/Target.vue'
 import News from './../partials/News.vue'
 import Newsletter from './../partials/Newsletter.vue'
-
 
 Vue.use(VueMasonry)
 

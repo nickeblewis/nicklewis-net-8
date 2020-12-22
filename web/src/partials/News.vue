@@ -52,12 +52,8 @@
                 </div>
               </footer>
             </article>
-
-         
-
           </div>
         </div>
-
       </div>
     </div>
   </section>
