@@ -58,7 +58,7 @@
     </div>
      <pagination-posts
             v-if="$page.photos.pageInfo.totalPages > 1"
-            base="/blog"
+            base="/"
             :totalPages="$page.photos.pageInfo.totalPages"
             :currentPage="$page.photos.pageInfo.currentPage"
           />

@@ -52,12 +52,7 @@
 
         <!-- Articles list -->
         
-        <pagination-posts
-            v-if="$page.posts.pageInfo.totalPages > 1"
-            base="/blog"
-            :totalPages="$page.posts.pageInfo.totalPages"
-            :currentPage="$page.posts.pageInfo.currentPage"
-          />
+       
 
         <!-- Pagination -->
         <nav class="flex justify-center pt-16" role="navigation" aria-label="Pagination Navigation">
@@ -94,12 +89,12 @@
 <script>
 import Vue from 'vue'
 import News from './../partials/News.vue'
-import PaginationPosts from '../components/PaginationPosts'
+
 
 export default {
   components: {
-    News,
-    PaginationPosts
+    News
+    
   },
   name: 'BlogList'
 }
