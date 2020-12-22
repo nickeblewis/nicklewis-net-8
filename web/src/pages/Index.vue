@@ -64,6 +64,7 @@ query HomePosts {
     }
     edges {
       node {
+        path
         id
         title
         tags

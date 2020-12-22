@@ -91,7 +91,7 @@
               <masonry :cols="{ default: 2, 1024: 2, 760: 2, 640: 1, 375: 1 }" :gutter="0">
                 <div
                   v-for="(image, imageIndex) in items"
-                  :key="imageIndex"
+                  :key="image.src"
                   @click="setIndex(imageIndex)"
                   class="py-1 sm:px-1"
                 >
@@ -105,18 +105,18 @@
               <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
             </div>
           </div>
-
           <!-- Related articles -->
-          <aside class="mt-20">
-            <div class="max-w-sm mx-auto md:max-w-none">
+          <!-- <aside class="mt-20">
+            <div class="max-w-sm mx-auto md:max-w-none"> -->
               <!-- Section title -->
               <!-- <h4 class="h4 py-6 mb-10 border-t border-b border-gray-700">More from Nick Lewis Digital</h4> -->
 
-              <News />
-            </div>
-          </aside>
+              <!-- <News /> -->
+            <!-- </div>
+          </aside> -->
         </div>
       </div>
+<Newsletter/>
     </section>
   </Layout>
 </template>
@@ -137,6 +137,7 @@ query Post ($id: ID!) {
     }
     edges {
       node {
+        path
         id
         title
         tags
@@ -246,6 +247,7 @@ import BlockContent from '~/components/BlockContent'
 import News from '../partials/News'
 import Bio from '../components/Bio'
 import VueMasonry from 'vue-masonry-css'
+import Newsletter from './../partials/Newsletter.vue'
 
 //import VueSilentbox from 'vue-silentbox'
 // import CoolLightBox from 'vue-cool-lightbox'
@@ -261,6 +263,7 @@ export default {
     BlockContent,
     Bio,
     VueMasonry,
+    Newsletter
   },
   data: function () {
     return {
@@ -276,6 +279,7 @@ export default {
   convert(data) {
     //console.log(data)
   },
+  
   created() {
     let nick = JSON.parse(JSON.stringify(this.$page.post))
 

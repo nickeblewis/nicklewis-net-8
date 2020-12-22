@@ -76,6 +76,7 @@ query HomePosts ($page: Int) {
     }
     edges {
       node {
+        path
         id
         title
         tags
