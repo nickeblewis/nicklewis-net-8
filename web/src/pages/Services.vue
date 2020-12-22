@@ -14,8 +14,8 @@
 
       <!-- Page sections -->
       <HeroFeatures />
-      <Stats />
-      <FeaturesZigzag />
+      <!-- <Stats /> -->
+      <!-- <FeaturesZigzag /> -->
       <FeaturesBlocks />
       <CaseStudies />
       <Cta />
