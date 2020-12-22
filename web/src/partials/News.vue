@@ -56,15 +56,24 @@
         </div>
       </div>
     </div>
+     <pagination-posts
+            v-if="$page.photos.pageInfo.totalPages > 1"
+            base="/blog"
+            :totalPages="$page.photos.pageInfo.totalPages"
+            :currentPage="$page.photos.pageInfo.currentPage"
+          />
   </section>
+  
 </template>
 
 <script>
 import BlockContent from '~/components/BlockContent'
+import PaginationPosts from '~/components/PaginationPosts'
 
 export default {
   components: {
-    BlockContent
+    BlockContent,
+    PaginationPosts
   },
   name: 'News',
 }
