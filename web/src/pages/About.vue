@@ -16,10 +16,10 @@
       <HeroAbout />
       <TeamImages />
       <Timeline />
-      <Team />
-      <TestimonialsCarousel />
-      <Career />
-      <Clients />
+      <!-- <Team /> -->
+      <!-- <TestimonialsCarousel /> -->
+      <!-- <Career /> -->
+      <!-- <Clients /> -->
       <Newsletter />
 
     </main>
