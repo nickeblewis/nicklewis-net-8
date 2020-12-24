@@ -135,7 +135,7 @@
           </ul>
 
           <!-- Copyrights note -->
-          <div class="text-gray-400 text-sm mr-4">&copy; 2020 Open PRO. All rights reserved.</div>
+          <div class="text-gray-400 text-sm mr-4">&copy; 2020 Nick Lewis Digital. All rights reserved.</div>
 
         </div>
 

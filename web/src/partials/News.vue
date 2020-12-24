@@ -36,7 +36,7 @@
                   </ul>
                 </div>
                 <h3 class="h4 mb-2">
-                  <router-link to="/blog-post" class="hover:text-gray-100 transition duration-150 ease-in-out">{{post.node.title}}</router-link>
+                  <router-link :to="post.node.path" class="hover:text-gray-100 transition duration-150 ease-in-out">{{post.node.title}}</router-link>
                 </h3>
               </header>
               
