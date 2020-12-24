@@ -22,13 +22,13 @@
         <nav class="hidden md:flex md:flex-grow">
           <!-- Desktop menu links -->
           <ul class="flex flex-grow justify-end flex-wrap items-center">
-            <li>
+            <!-- <li>
               <router-link
                 to="/services"
                 class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >Services</router-link
               >
-            </li>
+            </li> -->
             <!-- <li>
               <router-link
                 to="/features"
@@ -57,13 +57,13 @@
                 >Blog</router-link
               >
             </li>
-            <li>
+            <!-- <li>
               <router-link
                 to="/about"
                 class="text-gray-300 hover:text-gray-200 px-4 py-2 flex items-center transition duration-150 ease-in-out"
                 >About us</router-link
               >
-            </li>
+            </li> -->
             <li>
               <router-link
                 to="/contact"

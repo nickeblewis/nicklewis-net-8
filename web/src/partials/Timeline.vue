@@ -5,7 +5,7 @@
 
         <!-- Section header -->
         <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-          <h2 class="h2 mb-4">Helpng you ride the cutting edge!</h2>
+          <h2 class="h2 mb-4">Helping you succeed online!</h2>
           <p class="text-xl text-gray-400">Technology moves fast and it is hard to keep up with it, especially if your priorities lie elsewhere. You are in charge of your business. You look after the wellbeing of your staff. We help you with the technology.</p>
         </div>
 
