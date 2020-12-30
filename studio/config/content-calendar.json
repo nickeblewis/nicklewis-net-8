@@ -1,0 +1,15 @@
+{
+    "types": [
+        {
+            "type": "post",
+            "field": "publishedAt"
+        }
+    ],
+    "calendar": {
+        "event" : {
+            "dateFormat": "MMMM, dd yyyy",
+            "timeFomrat": "hh:mm a",
+            "showAuthor": "false"
+        }
+    }
+}
