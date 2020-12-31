@@ -31,6 +31,8 @@ const publish = async (metadata, client) => {
     return
   }
 
+  console.log('debug002')
+  
   // Publish it
   return (
     client
