@@ -17,12 +17,24 @@
     "dashboard-widget-structure-menu",
     "dashboard-widget-document-list",
     "dashboard-widget-netlify",
-    "content-calendar"
+    "content-calendar",
+    "@sanity/vision"
   ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
   "parts": [
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema.js"
+    },
+    {
+      "implements": "part:@sanity/base/document-actions/resolver",
+      "path": "documentActions"
     },
     {
       "name": "part:@sanity/desk-tool/structure",

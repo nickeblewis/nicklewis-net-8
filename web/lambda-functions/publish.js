@@ -22,6 +22,7 @@ const publish = async (metadata, client) => {
     .request({ uri })
     .then((response) => response.documents.length && response.documents[0])
 
+    console.log(revision)
   if (!revision) {
     // Here we have a situation where the scheduled revision does not exist
     // This can happen if the document was deleted via Studio or API without
