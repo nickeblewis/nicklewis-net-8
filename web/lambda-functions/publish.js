@@ -10,7 +10,7 @@ const client = sanityClient({
 
 // Query for any scheduled publish events that should occur
 const query = `* [_type == "schedule.metadata" && !(_id in path("drafts.**")) && datetime <= now()]`
-console.log(query)
+
 const publish = async (metadata, client) => {
   const dataset = client.config().dataset
   const id = metadata.documentId
@@ -32,7 +32,7 @@ const publish = async (metadata, client) => {
   }
 
   console.log('debug002')
-  
+
   // Publish it
   return (
     client
