@@ -1,18 +1,20 @@
 ---
 title: iPhone Photography
-summary: Issue 6 of 52 - the new iPhone 11 is a serious camera and I’ve been taking it for a whirl
+summary: Issue 6 of 52 - the new iPhone 11 is a serious camera and I’ve been taking
+  it for a whirl
 slug: issue6
 date: 2019-11-09
 published: true
 section: write52
-sub: 6
+sub: "6"
 tags:
- - CMS
- - Sanity
- - Headless
- - Gridsome
+- CMS
+- Sanity
+- Headless
+- Gridsome
+
 ---
-## iPhone 11 
+## iPhone 11
 
 ![The Hangar](./balloonhangar.jpeg)
 
@@ -23,11 +25,12 @@ Grumbles to one side, let's take a look at what this device can do. This isn't a
 So far I've tested it in two very different scenarios: Night time around Farnborough and in the wilderness of the Brecon Beacons, Wales! In both cases I was faced with tricky lighting conditions which challenged me a bit but the iPhone seemed to cope incredibly well, a far cry from what phone based cameras used to be like in the early 2000's.
 
 ## Farnborough Business Park - night mode
-- the following images demonstrate night photography shot around Farnborough and to summarise, I am bowled over by it’s capabilities, this is a revolutionary jump forward. Kind o like comparing one of those little cardboard cameras you used to get at weddings to a Leica!
+
+* the following images demonstrate night photography shot around Farnborough and to summarise, I am bowled over by it’s capabilities, this is a revolutionary jump forward. Kind o like comparing one of those little cardboard cameras you used to get at weddings to a Leica!
 
 ![Samuel F Cody statue at night](./cody.jpeg)
 
-*Samuel Cody was an American Aviaton pioneer who had settled in England and made the first powered flight in history. His statue is located next to the FAST Museum.*
+_Samuel Cody was an American Aviaton pioneer who had settled in England and made the first powered flight in history. His statue is located next to the FAST Museum._
 
 The Business Park next to Farnborough's Airport was borne out of what used to be the old RAE site and now sports a spectacular mix of modern offices, a hotel and lovingly restored heritage buildings. One of these structures is the Balloon Hangar that was fairly recently reinstated by a group of people who discovered it's parts stowed away in a building on the old site. They decided to resconstruct it and it has formed a fantastic centre-piece for the business park. The former terminal building complete with it's control tower has been re-purposed as smart modern offices. The old wind tunnels are well maintained and at certain times of the year you can take tours inside them, something I've not yet done and have been itching to do for years.
 
@@ -59,7 +62,7 @@ Last Saturday and Sunday we drove up to Wales from our Hampshire base and spent 
 
 You could tell that Wales, much like most of the UK has seen a lot of rain in recent weeks and the West coast took a serious pelting this weekend. Talking to local people, they all had experienced being cut off at times with power cuts at times.
 
-The Pentwyn Reservoir was rather high indeed and we were all fascinated by the **Bellmouth Spillway** seen here in the photo above, it was roaring like a giant monster sucking the water out! It was quite a frightening looking thing and reminded me of the scary moments faced by residents of the town of Whaley bridge in Derbyshire earlier this year. 
+The Pentwyn Reservoir was rather high indeed and we were all fascinated by the **Bellmouth Spillway** seen here in the photo above, it was roaring like a giant monster sucking the water out! It was quite a frightening looking thing and reminded me of the scary moments faced by residents of the town of Whaley bridge in Derbyshire earlier this year.
 
 ![Train Tracks](./tracks.jpeg)
 
@@ -69,4 +72,4 @@ We came across the Brecon Mountain Railway in a few different spots during our r
 
 ![Steps](./steps.jpeg)
 
-The final photo here was taken along what I think was the Four Falls trail and near a waterfall that I did capture images of but none of which I was happy with. Just goes to show how some subjects can be difficult to photograph. I will be revisiting so will go equipped with the big camera, tripod, filters and also the drone for some epic footage. All of which is on the cards for 2020. Yes, that is looming ever closer.
+The final photo here was taken along what I think was the Four-Falls trail and near a waterfall that I did capture images of but none of which I was happy with. Just goes to show how some subjects can be difficult to photograph. I will be revisiting so will go equipped with the big camera, tripod, filters and also the drone for some epic footage. All of which is on the cards for 2020. Yes, that is looming ever closer.
